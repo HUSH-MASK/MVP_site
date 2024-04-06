@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
-	import ombra from '$lib/assets/ombra.webp';
-	import ombra_front from '$lib/assets/ombra_front-no-back.png';
 	import  reddit_post from '$lib/assets/reddit_post.png';
 	import plot_blue from '$lib/assets/plot_blue.png';
 
@@ -45,8 +43,9 @@
 		<h1 class="text-hush-white  text-7xl font-bold ">Building the <span class="text-hush-blue-500">privacy </span> of the future</h1>
 		<p class="text-hush-white center mt-10 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 		<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
-	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
-		<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center">The
+	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-24">
+		<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center">
+			The
 			<span class="text-hush-blue-500">
 				Problem
 			</span>
@@ -90,7 +89,7 @@
 				</div>
 
 		</div>
-	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
+	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-24">
 		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center">Our
 			<span class="text-hush-blue-500">
 				Mission
@@ -100,22 +99,44 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 		</p>
 	</div>
-	<!--<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-		<ul class="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
-			<li class="flex flex-col hover:scale-110 transform transition">
-				<h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">Building the </h1><h1 class="mr-auto text-7xl font-bold   max-w-md text-hush-blue-500">privacy </h1><h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">of the future</h1>
-				<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
-			</li>
-			<li class="hover:scale-110 transform transition">
-				<img src={ombra} alt="Ombra"  class="ml-16"/>
-			</li>
-		</ul>
-		<h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">Building the </h1><h1 class="mr-auto text-7xl font-bold   max-w-md text-hush-blue-500">privacy </h1><h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">of the future</h1>
-		<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
-	</div>-->
+	</div>
 
+	<footer class="bg-hush-blue-500 rounded-lg shadow m-4 dark:bg-hush-blue-500">
+		<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-hush-blue-500 sm:text-center dark:text-black">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+    </span>
+			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-0">
+				<li>
+					<a href="{base}/home" class="hover:underline me-4 md:me-6">About</a>
+				</li>
+				<li>
+					<a href="{base}/home" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="{base}/home" class="hover:underline me-4 md:me-6">Licensing</a>
+				</li>
+				<li>
+					<a href="{base}/home" class="hover:underline">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
 
 </body>
 <style lang="scss">
     @use '$lib/color';
 </style>
+
+<!--<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+	<ul class="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
+		<li class="flex flex-col hover:scale-110 transform transition">
+			<h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">Building the </h1><h1 class="mr-auto text-7xl font-bold   max-w-md text-hush-blue-500">privacy </h1><h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">of the future</h1>
+			<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
+		</li>
+		<li class="hover:scale-110 transform transition">
+			<img src={ombra} alt="Ombra"  class="ml-16"/>
+		</li>
+	</ul>
+	<h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">Building the </h1><h1 class="mr-auto text-7xl font-bold   max-w-md text-hush-blue-500">privacy </h1><h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">of the future</h1>
+	<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
+</div>-->
