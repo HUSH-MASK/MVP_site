@@ -3,10 +3,14 @@
 	import logo from '$lib/assets/logo.png';
 	import  reddit_post from '$lib/assets/reddit_post.png';
 	import plot_blue from '$lib/assets/plot_blue.png';
-
+	import rick_photo from '$lib/assets/rick_photo.png';
+	import laura_photo from '$lib/assets/laura_photo.png';
+	import marco_b_photo from '$lib/assets/marco_b_photo.png';
+	import user from '$lib/assets/user.png';
+	import paolo from '$lib/assets/paolo.jpg';
 </script>
-<body class="min-h-screen bg-hush-grey-500 font-redhat">
-	<nav class="bg-hush-grey-500/75 sticky top-0 z-50">
+<body class="min-h-screen bg-hush-grey-600 font-redhat">
+	<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
 		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
 			<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
 				<img src={logo} class="h-14" alt="HUSH! Logo" />
@@ -39,73 +43,225 @@
 			<button type="button" class="text-hush-grey-500">Get it now</button>
 		</div>
 	</nav>
+
+	<!-- TITLE-->
+
 	<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-24">
-		<h1 class="text-hush-white  text-7xl font-bold ">Building the <span class="text-hush-blue-500">privacy </span> of the future</h1>
-		<p class="text-hush-white center mt-10 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
-	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-24">
-		<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center">
-			The
-			<span class="text-hush-blue-500">
-				Problem
-			</span>
-		</h1>
-		<p class="text-black text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-500 border rounded-xl border-hush-blue-500">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-		</p>
-	</div>
+		<h1 class="text-hush-white  text-7xl font-bold hover:scale-110 transform transition">Building the <span class="text-hush-blue-500">privacy </span> of the future</h1>
+		<p class="hover:scale-110 transform transition text-hush-white center mt-10 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<button type="button" class="hover:scale-110 transform transition mt-9 max-w-40 font-redhat text-hush-white hover:text-black border-2 border-hush-blue-800 hover:bg-hush-blue-800 focus:ring-4 focus:outline-none focus:ring-hush-blue-800 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-800 dark:text-hush-white dark:hover:text-hush-white dark:hover:bg-hush-blue-800sh dark:focus:ring-hush-blue-800 bg-hush-blue-800">Learn more </button>
+
+		<!-- PROBLEM -->
+
+		<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-12">
+			<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center mb-5">
+				The
+				<span class="text-hush-blue-500">
+					Problem
+				</span>
+			</h1>
+			<p class="text-hush-white text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+			</p>
+			<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+			</p>
+		</div>
 		<div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
 
-			<div class="max-w-md rounded overflow-hidden shadow-lg bg-hush-blue-500 text-black mr-24">
+			<!-- REDDIT -->
+
+			<div class="max-w-md rounded-xl overflow-hidden  bg-hush-grey-500 text-black mr-24 hover:scale-110 transform transition shadow-xl">
 				<img class="w-full max-h-40 object-cover" src="{reddit_post}" alt="Reddit post">
 				<div class="px-6 py-4">
-					<div class="font-bold text-xl mb-2">We asked, you answered</div>
-					<p class="text-black text-base">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">We asked, you answered</div>
+					<p class="text-hush-white text-base">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
-					<span class="inline-block bg-hush-blue-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#reddit</span>
-					<span class="inline-block bg-hush-blue-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#questions</span>
-					<span class="inline-block bg-hush-blue-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#masks</span>
+					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#reddit</span>
+					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
+					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 				</div>
 			</div>
 
-				<div class="max-w-md rounded overflow-hidden shadow-lg bg-hush-blue-500 text-black ml-24">
-					<div class="max-w-md max-h-40 bg-black">
-						<img class="w-full max-h-40 object-contain" src="{plot_blue}" alt="Plot">
-					</div>
-					<div class="px-6 py-4">
-						<div class="font-bold text-xl mb-2">We asked, you answered</div>
-						<p class="text-black text-base">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-						</p>
-					</div>
-					<div class="px-6 pt-4 pb-2">
-						<span class="inline-block bg-hush-blue-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#forms</span>
-						<span class="inline-block bg-hush-blue-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#questions</span>
-						<span class="inline-block bg-hush-blue-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#masks</span>
-					</div>
+			<!-- FORM -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-24 hover:scale-110 transform transition">
+				<div class="max-w-md max-h-40 bg-black">
+					<img class="w-full max-h-40 object-contain" src="{plot_blue}" alt="Plot">
 				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">We asked, you answered</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#forms</span>
+					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
+					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
+				</div>
+			</div>
 
 		</div>
-	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-24">
-		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center">Our
+
+		<!-- MISSION-->
+
+	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mt-24">
+		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">Our
 			<span class="text-hush-blue-500">
 				Mission
 			</span>
 		</h1>
-		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-700 border rounded-xl border-hush-blue-500">
+		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 		</p>
-	</div>
+		</div>
+
+		<!-- ABOUT US-->
+
+		<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-24">
+			<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center mb-5">
+				About
+				<span class="text-hush-blue-500">
+				Us
+			</span>
+				<span class="text-hush-grey-600">
+				.....
+			</span>
+			</h1>
+			<p class="text-hush-white text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
+				We are a team of students from the University of Trento ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
+
+			<!-- LAURA CARD -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 bg-black">
+					<img class="w-full max-h-56 object-contain" src="{laura_photo}" alt="Plot">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">LAURA</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#medical-engineering</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#materials</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#3Dprinting</span>
+				</div>
+			</div>
+
+			<!-- MARCO B CARD -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 bg-black">
+					<img class="w-full max-h-56 object-contain" src="{marco_b_photo}" alt="Plot">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#computerscience</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#embedded</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#webdev</span>
+				</div>
+			</div>
+
+			<!-- MARCO D CARD -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 bg-black">
+					<img class="w-full max-h-56 object-contain" src="{user}" alt="Plot">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#business</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#speaker</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#researcher</span>
+				</div>
+			</div>
+
+			<!-- PAOLO CARD -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 bg-black">
+					<img class="w-full max-h-56 object-contain" src="{paolo}" alt="Plot">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">PAOLO</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#business</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#teamleader</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#researcher</span>
+				</div>
+			</div>
+
+			<!-- RICCARDO CARD -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 bg-black">
+					<img class="w-full max-h-56  object-contain" src="{rick_photo}" alt="rick">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">RICCARDO</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#computerscience</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#embedded</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#webdev</span>
+				</div>
+			</div>
+
+			<!-- EDDIE CARD -->
+
+			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 bg-black">
+					<img class="w-full max-h-56 object-contain" src="{user}" alt="Plot">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">EDDIE</div>
+					<p class="text-hush-white text-base">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#computerscience</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#embedded</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#researcher</span>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 
-	<footer class="bg-hush-blue-500 rounded-lg shadow m-4 dark:bg-hush-blue-500">
+	<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
 		<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-hush-blue-500 sm:text-center dark:text-black">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+      <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
     </span>
-			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-0">
+			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
 				<li>
 					<a href="{base}/home" class="hover:underline me-4 md:me-6">About</a>
 				</li>
@@ -125,18 +281,5 @@
 </body>
 <style lang="scss">
     @use '$lib/color';
-</style>
 
-<!--<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-	<ul class="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
-		<li class="flex flex-col hover:scale-110 transform transition">
-			<h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">Building the </h1><h1 class="mr-auto text-7xl font-bold   max-w-md text-hush-blue-500">privacy </h1><h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">of the future</h1>
-			<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
-		</li>
-		<li class="hover:scale-110 transform transition">
-			<img src={ombra} alt="Ombra"  class="ml-16"/>
-		</li>
-	</ul>
-	<h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">Building the </h1><h1 class="mr-auto text-7xl font-bold   max-w-md text-hush-blue-500">privacy </h1><h1 class="text-hush-white mr-auto text-7xl font-bold  max-w-md">of the future</h1>
-	<button type="button" class="mt-9 max-w-40 font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500 bg-hush-blue-500">Learn more </button>
-</div>-->
+</style>

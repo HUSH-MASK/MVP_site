@@ -2,10 +2,9 @@
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
 	import ombra from '$lib/assets/ombra.webp';
-	import { IconArrowRight } from '@tabler/icons-svelte';
 </script>
-<body class="min-h-screen bg-hush-grey-500 font-redhat">
-	<nav class="dark:bg-hush-grey-500">
+<body class="min-h-screen bg-hush-grey-600 font-redhat">
+	<nav class="dark:bg-hush-grey-600">
 		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
 			<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
 				<img src={logo} class="h-14" alt="HUSH! Logo" />
@@ -38,22 +37,44 @@
 			<button type="button" class="font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500">Get it now</button>
 		</div>
 	</nav>
-<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mb-24">
 	<ul class="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
 		<li class="flex flex-col">
-			<div class="hover:scale-110 transform transition block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-700 mt-20">
-				<p class="text-hush-white max-w-screen-sm text-xl ">Meet the solution to ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis fermentum magna sed volutpat.  <IconArrowRight class="ml-auto mr-12"/></p>
+			<div class="hover:scale-110 shadow-xl transform transition block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-500 mt-20">
+				<p class="text-hush-white max-w-screen-sm text-xl ">Meet the solution to ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis fermentum magna sed volutpat. </p>
 			</div>
-			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-60">HUSH! MASK</h1>
+			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-60"> <span class="text-hush-blue-500">TACITUS </span>MASK</h1>
 		</li>
 		<li>
 			<img src={ombra} alt="Ombra"  class="ml-16"/>
 		</li>
 	</ul>
 </div>
-<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-hush-blue-700 border rounded-xl">
-	<h1 class="text-hush-white mr-auto text-7xl font-bold mt-60">HUSH! MASK</h1>
+<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-hush-blue-500 border rounded-xl">
+	<h1 class="text-black mr-auto text-7xl font-bold mt-12 mb-60">HUSH! It's Tacitus</h1>
 </div>
+
+	<footer class="bg-hush-blue-900 rounded-lg shadow m-4 dark:bg-hush-blue-900">
+		<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-hush-blue-500 sm:text-center dark:text-black">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+    </span>
+			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-0">
+				<li>
+					<a href="{base}/home" class="hover:underline me-4 md:me-6">About</a>
+				</li>
+				<li>
+					<a href="{base}/home" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="{base}/home" class="hover:underline me-4 md:me-6">Licensing</a>
+				</li>
+				<li>
+					<a href="{base}/home" class="hover:underline">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
 </body>
 <style lang="scss">
     @use '$lib/color';
