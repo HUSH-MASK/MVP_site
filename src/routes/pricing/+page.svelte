@@ -39,31 +39,35 @@
 
     <div class="max-w-screen-xl mx-auto p-4 mb-12 mt-12">
         <h1 class="text-hush-white text-7xl font-bold mt-5 text-end mb-5">
-            The
+            Technical
             <span class="text-hush-blue-500">
                 Characteristics
             </span>
         </h1>
-        <p class="text-hush-white text-2xl mtext-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-
+        <p class="text-hush-white text-2xl text-center mr-auto ml-12 w-1/2  bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
+            <span class="font-bold"> ESP32 Mini </span> for Bluethoot connection <br>
+            <span class="font-bold">I2S communication protocol </span> for communication<br>
+            <span class="font-bold">HFP profile </span>for dual communication <br>
+            <span class="font-bold">Bone conduciton </span>for output audio <br>
+            <span class="font-bold">Soundproof shield </span>for noise reduction <br>
+            <span class="font-bold">Termal shield </span>for heat dissipation
         </p>
     </div>
 
-    <div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mt-24">
-		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">The
+    <div class="max-w-screen-xl  justify-between mx-auto p-4 mt-24">
+		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-left mb-5">The
 			<span class="text-hush-blue-500">
 				Price
 			</span>
 		</h1> 
-		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12  w-1/2 bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
+			Available now for only: <br>
+            <span class="text-3x1 font-bold"> 
+                99€
+            </span> 
 		</p>
-		</div>
-
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-hush-blue-500 border rounded-xl">
-        <h1 class="text-black mr-auto text-7xl font-bold mt-12 mb-60">HUSH! It's Tacitus</h1>
     </div>
+
 
     <footer class="bg-hush-blue-900 rounded-lg shadow m-4 dark:bg-hush-blue-900">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
