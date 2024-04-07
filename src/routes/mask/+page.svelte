@@ -131,7 +131,7 @@
 	</div>
 
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 rounded-xl">
-		<img src="{noise_chart}" alt="plot" class="max-w-screen-lg mx-auto">
+		<img src="{noise_chart}" alt="plot" class="max-w-screen-md mx-auto">
 	</div>
 
 	<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
