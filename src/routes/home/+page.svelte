@@ -9,6 +9,7 @@
 	import paolo from '$lib/assets/paolo.jpg';
 	import marco_d_photo from '$lib/assets/marco_d_photo.jpeg';
 	import eddie_photo from '$lib/assets/eddie_photo.jpg';
+	import { IconArrowRight } from '@tabler/icons-svelte';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 	<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
@@ -49,7 +50,7 @@
 
 	<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-24">
 		<h1 class="text-hush-white  text-7xl font-bold hover:scale-110 transform transition">Building the <span class="text-hush-blue-500">privacy </span> of the future</h1>
-		<p class="hover:scale-110 transform transition text-hush-white center mt-10 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<p class="hover:scale-110 transform transition text-hush-white center mt-10 text-xl text-center">Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With HUSH!, regain control over your conversations. Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.</p>
 		<a href="{base}/home#problem">
 			<button type="button" class="hover:scale-110 transform transition mt-9 max-w-40 font-redhat text-hush-white hover:text-black border-2 border-hush-blue-800 hover:bg-hush-blue-800 focus:ring-4 focus:outline-none focus:ring-hush-blue-800 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-800 dark:text-hush-white dark:hover:text-hush-white dark:hover:bg-hush-blue-800sh dark:focus:ring-hush-blue-800 bg-hush-blue-800">Learn more </button>
 		</a>
@@ -63,30 +64,33 @@
 				</span>
 			</h1>
 			<p class="text-hush-white text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+				In quiet places like trains, speaking without disturbing others is a challenge. Whether chatting with fellow passengers or on the phone, people worry about causing inconvenience or invading privacy.
 			</p>
 			<p class="text-hush-white text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+				Not only that, but we found out that there are people concerned about showing their faces in public. They feel exposed and vulnerable, and they want to protect their privacy.
 			</p>
 		</div>
 
-		<div class="max-w-screen-xl flex flex-wrap  place-items-start  justify-between p-4 mx-auto">
+		<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 
 			<!-- REDDIT -->
 
 			<div class="max-w-md rounded-xl overflow-hidden  bg-hush-grey-500 text-black mr-24 hover:scale-110 transform transition shadow-xl">
+				<a href="https://www.reddit.com/r/Italia/comments/1bjajuo/qualcuno_di_voi_sente_il_bisogno_di_coprirsi_o/">
 				<img class="w-full max-h-40 object-cover" src="{reddit_post}" alt="Reddit post">
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">We asked, you answered</div>
 					<p class="text-hush-white text-base">
 						We started a social campaign on Reddit to understand to understand who, when and why people want to cover their face.
 					</p>
+					<IconArrowRight class="w-6 h-6 text-hush-blue-500 ml-auto" />
 				</div>
 				<div class="px-6 pt-4 pb-2">
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#reddit</span>
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 				</div>
+				</a>
 			</div>
 			<!-- FORM -->
 
@@ -105,7 +109,6 @@
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 				</div>
-
 			</div>
 		</div>
 
@@ -127,7 +130,9 @@
 			<h1 class="text-hush-white mr-auto text-3xl  mb-12 text-center">Because whispering is not an option</h1>
 
 			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
-				<button type="button" class="text-xl hover:scale-110 transform transition font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl  px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Discover TACITUS</button>
+				<a href="{base}/mask">
+					<button type="button" class="text-xl hover:scale-110 transform transition font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl  px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Discover TACITUS</button>
+				</a>
 			</div>
 
 		</div>
