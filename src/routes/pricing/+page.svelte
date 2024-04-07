@@ -5,7 +5,7 @@
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 <nav class="bg-hush-grey-600/75 sticky top-0 z-50">
-	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<img src={logo} class="h-14" alt="HUSH! Logo" />
 		</a>
@@ -48,9 +48,12 @@
 				<div class="mb-12 lg:mb-0">
 					<div
 						class=" text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-hush-grey-700 dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
-						<h2 class="mb-6 pb-2 text-4xl text-hush-white font-bold">TACITUS mask</h2>
-						<p class="mb-6 pb-2 text-neutral-500 text-hush-white dark:text-hush-white">
-							Say goodbye to unwanted attention and social anxiety. Perfect for privacy seekers, professionals and people that looks for Italian style.
+						<h2 class="mb-2 pb-2 text-4xl text-hush-white font-bold">TACITUS mask</h2>
+						<p class="mb-6 pb-2  text-xl font-bold text-hush-white dark:text-hush-white">
+							for 99€
+						</p>
+						<p class="mb-6 pb-2  text-hush-white dark:text-hush-white">
+							Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks for Italian style.
 						</p>
 						<div class="mb-6 flex flex-wrap">
 							<div class="mb-4 w-full md:w-4/12">
@@ -103,7 +106,7 @@
 							</div>
 						</div>
 						<button type="button"
-										class="inline-block rounded bg-hush-blue-600 px-12 pt-3.5 pb-3 text-sm font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-hush-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-hush-blue-600 dark:text-hush-white dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+										class="mb-3inline-block rounded bg-hush-blue-600 px-12 pt-3.5 pb-3 text-sm font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-hush-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-hush-blue-600 dark:text-hush-white dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
 										data-te-ripple-init data-te-ripple-color="light">
 							Buy now
 						</button>

@@ -6,9 +6,9 @@
 	import rick_photo from '$lib/assets/rick_photo.png';
 	import laura_photo from '$lib/assets/laura_photo.png';
 	import marco_b_photo from '$lib/assets/marco_b_photo.png';
-	import user from '$lib/assets/user.png';
 	import paolo from '$lib/assets/paolo.jpg';
 	import marco_d_photo from '$lib/assets/marco_d_photo.jpeg';
+	import eddie_photo from '$lib/assets/eddie_photo.jpg';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 	<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
@@ -63,15 +63,14 @@
 				</span>
 			</h1>
 			<p class="text-hush-white text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 			</p>
 			<p class="text-hush-white text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 			</p>
 		</div>
 
-
-		<div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
+		<div class="max-w-screen-xl flex flex-wrap  place-items-start  justify-between p-4 mx-auto">
 
 			<!-- REDDIT -->
 
@@ -80,7 +79,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">We asked, you answered</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						We started a social campaign on Reddit to understand to understand who, when and why people want to cover their face.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -89,7 +88,6 @@
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 				</div>
 			</div>
-
 			<!-- FORM -->
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-24 hover:scale-110 transform transition">
@@ -99,7 +97,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">We asked, you answered</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						We created a form to collect data on the use of the phone in public places and the need for privacy. This from was shared on social media, university groups and forums.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -107,8 +105,8 @@
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
 					<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 				</div>
-			</div>
 
+			</div>
 		</div>
 
 		<!-- MISSION-->
@@ -255,7 +253,7 @@
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
 				<div class="max-w-md max-h-56 object-cover">
-					<img class="w-full max-h-56 object-contain" src="{user}" alt="Plot">
+					<img class="w-full max-h-56 object-cover" src="{eddie_photo}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">EDDIE</div>
