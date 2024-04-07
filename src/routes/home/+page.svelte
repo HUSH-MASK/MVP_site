@@ -8,6 +8,7 @@
 	import marco_b_photo from '$lib/assets/marco_b_photo.png';
 	import user from '$lib/assets/user.png';
 	import paolo from '$lib/assets/paolo.jpg';
+	import marco_d_photo from '$lib/assets/marco_d_photo.jpeg';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 	<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
@@ -27,16 +28,16 @@
 						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 hover:text-hush-blue-500" aria-current="page">Home</a>
 					</li>
 					<li>
-						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
+						<a href="{base}/home#about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
 					</li>
 					<li>
-						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
+						<a href="{base}/mask" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
 					</li>
 					<li>
-						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
+						<a href="{base}/pricing" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
 					</li>
 					<li>
-						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
+						<a href="{base}/home#about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -49,24 +50,27 @@
 	<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-24">
 		<h1 class="text-hush-white  text-7xl font-bold hover:scale-110 transform transition">Building the <span class="text-hush-blue-500">privacy </span> of the future</h1>
 		<p class="hover:scale-110 transform transition text-hush-white center mt-10 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		<button type="button" class="hover:scale-110 transform transition mt-9 max-w-40 font-redhat text-hush-white hover:text-black border-2 border-hush-blue-800 hover:bg-hush-blue-800 focus:ring-4 focus:outline-none focus:ring-hush-blue-800 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-800 dark:text-hush-white dark:hover:text-hush-white dark:hover:bg-hush-blue-800sh dark:focus:ring-hush-blue-800 bg-hush-blue-800">Learn more </button>
-
+		<a href="{base}/home#problem">
+			<button type="button" class="hover:scale-110 transform transition mt-9 max-w-40 font-redhat text-hush-white hover:text-black border-2 border-hush-blue-800 hover:bg-hush-blue-800 focus:ring-4 focus:outline-none focus:ring-hush-blue-800 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-800 dark:text-hush-white dark:hover:text-hush-white dark:hover:bg-hush-blue-800sh dark:focus:ring-hush-blue-800 bg-hush-blue-800">Learn more </button>
+		</a>
 		<!-- PROBLEM -->
 
-		<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-12">
+		<div id="problem" class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
 			<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center mb-5">
 				The
 				<span class="text-hush-blue-500">
 					Problem
 				</span>
 			</h1>
-			<p class="text-hush-white text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
+			<p class="text-hush-white text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 			</p>
-			<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+			<p class="text-hush-white text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 			</p>
 		</div>
+
+
 		<div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
 
 			<!-- REDDIT -->
@@ -109,20 +113,30 @@
 
 		<!-- MISSION-->
 
-	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mt-24">
+	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mt-24m">
 		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">Our
 			<span class="text-hush-blue-500">
 				Mission
 			</span>
 		</h1>
-		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
+			HUSH! aims to reinvent the way people communicate on the phone in public places, ensuring maximum privacy via our sound-absorbing mask. The first coming as a complete Bluetooth wearable device.
 		</p>
+		</div>
+
+		<div class="min-w-full max-w-screen-xl flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-24 p-4 bg-hush-blue-800 border rounded-xl">
+			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-6 text-center">Mask on, sound off.</h1>
+			<h1 class="text-hush-white mr-auto text-3xl  mb-12 text-center">Because whispering is not an option</h1>
+
+			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
+				<button type="button" class="text-xl hover:scale-110 transform transition font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl  px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Discover TACITUS</button>
+			</div>
+
 		</div>
 
 		<!-- ABOUT US-->
 
-		<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-24">
+		<div id="about" class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-12">
 			<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center mb-5">
 				About
 				<span class="text-hush-blue-500">
@@ -132,8 +146,11 @@
 				.....
 			</span>
 			</h1>
-			<p class="text-hush-white text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-				We are a team of students from the University of Trento ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			<p class="text-hush-white text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
+				We are a group of six university students eager to complete a project that is both ambitious and achievable, capable of bringing significant benefits to a concrete and everyday problem such as maintaining privacy during phone calls.
+			</p>
+			<p class="text-hush-white text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+				Do you have challenging ideas about it and want to collaborate with us? Write to hushinnovation@gmail.com !
 			</p>
 		</div>
 
@@ -143,7 +160,7 @@
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
 				<div class="max-w-md max-h-56 bg-black">
-					<img class="w-full max-h-56 object-contain" src="{laura_photo}" alt="Plot">
+					<img class="w-full max-h-56 object-cover" src="{laura_photo}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">LAURA</div>
@@ -162,7 +179,7 @@
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
 				<div class="max-w-md max-h-56 bg-black">
-					<img class="w-full max-h-56 object-contain" src="{marco_b_photo}" alt="Plot">
+					<img class="w-full max-h-56 object-cover" src="{marco_b_photo}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
@@ -181,7 +198,7 @@
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
 				<div class="max-w-md max-h-56 bg-black">
-					<img class="w-full max-h-56 object-contain" src="{user}" alt="Plot">
+					<img class="w-full max-h-56 object-cover" src="{marco_d_photo}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
@@ -200,7 +217,7 @@
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
 				<div class="max-w-md max-h-56 bg-black">
-					<img class="w-full max-h-56 object-contain" src="{paolo}" alt="Plot">
+					<img class="w-full max-h-56 object-cover" src="{paolo}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">PAOLO</div>
@@ -219,7 +236,7 @@
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
 				<div class="max-w-md max-h-56 bg-black">
-					<img class="w-full max-h-56  object-contain" src="{rick_photo}" alt="rick">
+					<img class="w-full max-h-56  object-cover" src="{rick_photo}" alt="rick">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">RICCARDO</div>
@@ -237,7 +254,7 @@
 			<!-- EDDIE CARD -->
 
 			<div class="max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black ml-24 hover:scale-110 transform transition mb-10">
-				<div class="max-w-md max-h-56 bg-black">
+				<div class="max-w-md max-h-56 object-cover">
 					<img class="w-full max-h-56 object-contain" src="{user}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
@@ -263,7 +280,7 @@
     </span>
 			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
 				<li>
-					<a href="{base}/home" class="hover:underline me-4 md:me-6">About</a>
+					<a href="{base}/home#about" class="hover:underline me-4 md:me-6">About</a>
 				</li>
 				<li>
 					<a href="{base}/home" class="hover:underline me-4 md:me-6">Privacy Policy</a>
@@ -272,7 +289,7 @@
 					<a href="{base}/home" class="hover:underline me-4 md:me-6">Licensing</a>
 				</li>
 				<li>
-					<a href="{base}/home" class="hover:underline">Contact</a>
+					<a href="{base}/home#about" class="hover:underline">Contact</a>
 				</li>
 			</ul>
 		</div>
