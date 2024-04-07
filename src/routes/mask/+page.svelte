@@ -3,6 +3,9 @@
 	import logo from '$lib/assets/logo.png';
 	import ombra from '$lib/assets/ombra.webp';
  import noise_chart from '$lib/assets/noise_chart.png';
+ import prototype from '$lib/assets/prototype.jpg';
+ import experiment from '$lib/assets/experiment.jpg';
+ import board from '$lib/assets/board.jpg';
  import {IconArrowRight} from '@tabler/icons-svelte';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
@@ -125,13 +128,33 @@
 					dampening
 				</span>
 		</h1>
-		<p class="text-hush-white text-2xl mt- text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
+		<p class="text-hush-white text-2xl mb-5 text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
 			TACITUS reduces the volume of your voice up to -30dB. You could yell into your mask and your flatmates or partner could still sleep soundly next door.
 		</p>
+		<img src="{noise_chart}" alt="plot" class="max-w-screen-md ml-auto">
 	</div>
 
-	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 rounded-xl">
-		<img src="{noise_chart}" alt="plot" class="max-w-screen-md mx-auto">
+	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-12">
+		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">
+			Engineering
+			<span class="text-hush-blue-500">
+					the Italian way
+				</span>
+		</h1>
+		<p class="text-hush-white text-2xl mb-5 text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
+			TACITUS is designed and built in Italy both in the flesh and in the software.
+		</p>
+		<div class="relative w-full max-w-full justify-center py-12 *:w-[33%] *:inline-block">
+			<div class="-translate-y-8 scale-110 hover:z-30">
+				<img src="{board}" alt="plot" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+			</div>
+			<div class="scale-110 hover:z-30">
+				<img src="{prototype}" alt="plot" class= "rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+			</div>
+			<div class="translate-y-8 scale-110 hover:z-30">
+				<img src="{experiment}" alt="plot" class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+			</div>
+		</div>
 	</div>
 
 	<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
