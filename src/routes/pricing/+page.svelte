@@ -4,7 +4,7 @@
 	import ombra from '$lib/assets/ombra.webp';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
-<nav class="dark:bg-hush-grey-600">
+<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
 		<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<img src={logo} class="h-14" alt="HUSH! Logo" />
@@ -21,16 +21,16 @@
 					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 hover:text-hush-blue-500" aria-current="page">Home</a>
 				</li>
 				<li>
-					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
+					<a href="{base}/home#about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
 				</li>
 				<li>
-					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
+					<a href="{base}/mask" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
 				</li>
 				<li>
-					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
+					<a href="{base}/pricing" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
 				</li>
 				<li>
-					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
+					<a href="{base}/home#about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -48,11 +48,9 @@
 				<div class="mb-12 lg:mb-0">
 					<div
 						class=" text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-hush-grey-700 dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
-						<h2 class="mb-6 pb-2 text-4xl text-hush-white font-bold">One-time payment</h2>
+						<h2 class="mb-6 pb-2 text-4xl text-hush-white font-bold">TACITUS mask</h2>
 						<p class="mb-6 pb-2 text-neutral-500 text-hush-white dark:text-hush-white">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-							soluta corporis voluptate ab error quam dolores doloremque,
-							quae consectetur.
+							Say goodbye to unwanted attention and social anxiety. Perfect for privacy seekers, professionals and people that looks for Italian style.
 						</p>
 						<div class="mb-6 flex flex-wrap">
 							<div class="mb-4 w-full md:w-4/12">
