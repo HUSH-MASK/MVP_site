@@ -46,7 +46,7 @@
 		<li class="flex flex-col">
 			<div class="flex-col hover:scale-110 shadow-xl transform transition block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-500 mt-20">
 				<p class="text-hush-white max-w-screen-sm text-xl ">
-					Meet TACITUS Privacy Mask: your discreet voice solution. Say goodbye to unwanted attention and social anxiety. Perfect for privacy seekers, professionals and people that looks for Italian style.
+					Your discreet voice solution. Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks for Italian style.
 				</p>
 				<p class="text-hush-white max-w-screen-sm text-xl mt-4">
 					Get yours now and speak freely without fear.
@@ -56,7 +56,7 @@
 			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-60"> <span class="text-hush-blue-500">TACITUS </span>MASK</h1>
 		</li>
 		<li>
-			<img src={ombra} alt="Ombra"  class="ml-16"/>
+			<img src={ombra} alt="Ombra"  class="ml-16 max-w-lg"/>
 		</li>
 	</ul>
 </div>
