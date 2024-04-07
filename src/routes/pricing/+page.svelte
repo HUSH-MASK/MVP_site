@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
+	import ombra from '$lib/assets/ombra.webp';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 <nav class="dark:bg-hush-grey-600">
@@ -33,10 +34,97 @@
 				</li>
 			</ul>
 		</div>
-		<button type="button" class="font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500">Get it now</button>
+		<button type="button" class="text-hush-grey-500">Get it now</button>
 	</div>
 </nav>
 
+<!-- Container for demo purpose -->
+<div class="container my-24 mx-auto md:px-6">
+	<!-- Section: Design Block -->
+	<section class="mb-32">
+		<!-- Jumbotron -->
+		<div class="container mx-auto xl:px-32">
+			<div class="grid items-center lg:grid-cols-2">
+				<div class="mb-12 lg:mb-0">
+					<div
+						class=" text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-hush-grey-700 dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+						<h2 class="mb-6 pb-2 text-4xl text-hush-white font-bold">One-time payment</h2>
+						<p class="mb-6 pb-2 text-neutral-500 text-hush-white dark:text-hush-white">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+							soluta corporis voluptate ab error quam dolores doloremque,
+							quae consectetur.
+						</p>
+						<div class="mb-6 flex flex-wrap">
+							<div class="mb-4 w-full md:w-4/12">
+								<p class="flex">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+										<path stroke-linecap="round" stroke-linejoin="round"
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Soundproof
+								</p>
+							</div>
+							<div class="mb-4 w-full md:w-4/12">
+								<p class="flex">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+										<path stroke-linecap="round" stroke-linejoin="round"
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Bluethoot
+								</p>
+							</div>
+							<div class="mb-4 w-full md:w-4/12">
+								<p class="flex">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+										<path stroke-linecap="round" stroke-linejoin="round"
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Compatible with all devices
+								</p>
+							</div>
+							<div class="mb-4 w-full md:w-4/12">
+								<p class="flex">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+										<path stroke-linecap="round" stroke-linejoin="round"
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Comfort
+								</p>
+							</div>
+							<div class="mb-4 w-full md:w-4/12">
+								<p class="flex">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+										<path stroke-linecap="round" stroke-linejoin="round"
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Style
+								</p>
+							</div>
+							<div class="mb-4 w-full md:w-4/12">
+								<p class="flex">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+										<path stroke-linecap="round" stroke-linejoin="round"
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>2 years warranty
+								</p>
+							</div>
+						</div>
+						<button type="button"
+										class="inline-block rounded bg-hush-blue-600 px-12 pt-3.5 pb-3 text-sm font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-hush-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-hush-blue-600 dark:text-hush-white dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+										data-te-ripple-init data-te-ripple-color="light">
+							Buy now
+						</button>
+					</div>
+				</div>
+
+				<div>
+					<img src="{ombra}"
+							 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+				</div>
+			</div>
+		</div>
+		<!-- Jumbotron -->
+	</section>
+	<!-- Section: Design Block -->
+</div>
+<!-- Container for demo purpose -->
+
+<!--
     <div class="max-w-screen-xl mx-auto p-4 mb-12 mt-12">
         <h1 class="text-hush-white text-7xl font-bold mt-5 text-end mb-5">
             Technical
@@ -68,14 +156,15 @@
 		</p>
     </div>
 
+-->
 
-    <footer class="bg-hush-blue-900 rounded-lg shadow m-4 dark:bg-hush-blue-900">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-hush-blue-500 sm:text-center dark:text-black">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
+	<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
     </span>
-		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-0">
+		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
 			<li>
-				<a href="{base}/home" class="hover:underline me-4 md:me-6">About</a>
+				<a href="{base}/home#about" class="hover:underline me-4 md:me-6">About</a>
 			</li>
 			<li>
 				<a href="{base}/home" class="hover:underline me-4 md:me-6">Privacy Policy</a>
@@ -84,7 +173,7 @@
 				<a href="{base}/home" class="hover:underline me-4 md:me-6">Licensing</a>
 			</li>
 			<li>
-				<a href="{base}/home" class="hover:underline">Contact</a>
+				<a href="{base}/home#about" class="hover:underline">Contact</a>
 			</li>
 		</ul>
 	</div>

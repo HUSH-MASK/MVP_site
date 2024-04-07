@@ -36,7 +36,9 @@
 					</li>
 				</ul>
 			</div>
-			<button type="button" class="text-hush-grey-500">Get it now</button>
+			<a href="{base}/pricing">
+				<button type="button" class="font-redhat text-hush-white hover:text-white border-2 border-hush-blue-500 hover:bg-hush-blue-500 focus:ring-4 focus:outline-none focus:ring-hush-blue-500 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-blue-500sh dark:focus:ring-hush-blue-500">Get it now</button>
+			</a>
 		</div>
 	</nav>
 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mb-24">
@@ -110,7 +112,9 @@
 				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 			</div>
 		</div>
-		<button type="button" class="hover:scale-110 transform transition mt-12 font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl text-xl px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Get it now</button>
+		<a href="{base}/pricing">
+			<button type="button" class="hover:scale-110 transform transition mt-12 font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl text-xl px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Get it now</button>
+		</a>
 	</div>
 </div>
 
