@@ -85,7 +85,6 @@
 
 		<div class="min-w-full max-w-screen-xl flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-12 mb-12 p-4 bg-hush-blue-800 border rounded-xl">
 			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-6 text-center">Meet our solution.</h1>
-			<h1 class="text-hush-white mr-auto text-3xl  mb-12 text-center">Because whispering was never an option</h1>
 
 			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 				<a href="{base}/mask">
