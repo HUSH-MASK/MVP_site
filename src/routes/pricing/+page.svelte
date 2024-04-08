@@ -7,6 +7,7 @@
 	import prototype from '$lib/assets/prototype.jpg';
 	import experiment from '$lib/assets/experiment.jpg';
 	import { AccordionItem, Accordion } from 'flowbite-svelte';
+	import { ChevronDoubleUpOutline, ChevronDoubleDownOutline } from 'flowbite-svelte-icons';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 <nav class="bg-hush-grey-600/75 sticky top-0 z-50">
@@ -178,6 +179,12 @@
 <Accordion class="text-hush-white flex-1">
 	<AccordionItem class="text-hush-white">
 		<span slot="header" class="text-bold text-xl">Soundproofing</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				10-15 dB at low frequencies
@@ -189,6 +196,12 @@
 	</AccordionItem>
 	<AccordionItem>
 		<span slot="header" class="text-bold text-xl">Materials</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				Polyester fabric: 60%
@@ -212,6 +225,12 @@
 	</AccordionItem>
 	<AccordionItem>
 		<span slot="header" class="text-bold text-xl">Microphone</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				Frequency range: 35-18 kHz
@@ -229,6 +248,12 @@
 	</AccordionItem>
 	<AccordionItem>
 		<span slot="header" class="text-bold text-xl">Connectivity</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				Connectivity: Bluetooth® 5.2 HFP and A2DP
@@ -240,6 +265,12 @@
 	</AccordionItem>
 	<AccordionItem>
 		<span slot="header" class="text-bold text-xl">Sound</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				Frequency response: 50Hz-16kHz
@@ -251,6 +282,12 @@
 	</AccordionItem>
 	<AccordionItem>
 		<span slot="header" class="text-bold text-xl">Battery</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				Continuous play up to 24 hours of listening time with a single charge
@@ -265,6 +302,12 @@
 	</AccordionItem>
 	<AccordionItem>
 		<span slot="header" class="text-bold text-xl">Dimensions</span>
+		<div slot="arrowup">
+			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+		</div>
+		<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
 		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
 			<li>
 				 Weight S/M size: ~265 gr. (9.4 oz)
