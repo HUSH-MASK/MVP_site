@@ -44,7 +44,7 @@
 	<ul class="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
 		<li class="flex flex-col">
 			<a href="{base}/pricing">
-				<div class="flex-col hover:scale-110 shadow-xl transform transition block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-500 mt-20">
+				<div class="flex-col hover:scale-110 shadow-xl transform transition block rounded-lg bg-white p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-700 mt-20">
 					<p class="text-hush-white max-w-screen-sm text-xl ">
 						Your discreet voice solution. Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks for Italian style.
 					</p>
@@ -57,7 +57,7 @@
 			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-60"> <span class="text-hush-blue-500">TACITUS </span>MASK</h1>
 		</li>
 		<li>
-			<img src={ombra} alt="Ombra"  class="ml-16 max-w-lg"/>
+			<img src={ombra} alt="Ombra"  class="ml-16 max-w-lgc  rounded-xl shadow-lg dark:shadow-black/20 bg-hush-grey-500"/>
 		</li>
 	</ul>
 </div>

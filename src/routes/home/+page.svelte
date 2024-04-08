@@ -46,7 +46,7 @@
 	<!-- TITLE-->
 
 	<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-24">
-		<h1 class="text-hush-white  text-6xl font-bold hover:scale-110 transform transition text-center">
+		<h1 class="text-hush-white  text-6xl font-bold text-center">
 			Too many people
 			<span class="text-hush-blue-500">watching</span>
 			, too many
@@ -55,10 +55,7 @@
 			<span class="text-hush-blue-500">hear</span>
 			you.
 		</h1>
-		<p class="hover:scale-110 transform transition text-hush-white center mt-10 text-xl text-center">Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With HUSH!, regain control over your conversations. Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.</p>
-		<a href="{base}/home#problem">
-			<button type="button" class="hover:scale-110 transform transition mt-9 max-w-40 font-redhat text-hush-white hover:text-black border-2 border-hush-blue-800 hover:bg-hush-blue-800 focus:ring-4 focus:outline-none focus:ring-hush-blue-800 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-blue-800 dark:text-hush-white dark:hover:text-hush-white dark:hover:bg-hush-blue-800sh dark:focus:ring-hush-blue-800 bg-hush-blue-800">Learn more </button>
-		</a>
+		<p class="text-hush-white center mt-10 text-xl text-center">Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With HUSH!, regain control over your conversations. Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.</p>
 
 		<!-- PROBLEM -->
 
@@ -83,7 +80,7 @@
 
 		<!-- SOLUTION -->
 
-		<div class="min-w-full max-w-screen-xl flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-12 mb-12 p-4 bg-hush-blue-800 border rounded-xl">
+		<div class="min-w-full max-w-md flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-12 mb-12 p-4 bg-hush-blue-800 border rounded-xl">
 			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-6 text-center">Meet our solution.</h1>
 
 			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
@@ -94,23 +91,23 @@
 
 		</div>
 
-		<div class="relative w-full max-w-full justify-center py-12 *:w-[33%] *:inline-block mt-6 mb-6">
-		<div class="-translate-y-8 scale-110 hover:z-30">
-			<img src="{social_anxiety}" alt="plot" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+		<div class="relative max-w-full  py-12 *:w-[29%] *:inline-block mt-6 mb-6">
+			<div class="-translate-y-8 translate-x-16 scale-110 hover:z-30">
+				<img src="{social_anxiety}" alt="plot" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+			</div>
+			<div class="translate-x-16 scale-110 hover:z-30">
+				<img src="{phone}" alt="plot" class= "rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+			</div>
+			<div class="translate-y-8 translate-x-16 scale-110 hover:z-30">
+				<img src="{library}" alt="plot" class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+			</div>
 		</div>
-		<div class="scale-110 hover:z-30">
-			<img src="{phone}" alt="plot" class= "rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
-		</div>
-		<div class="translate-y-8 scale-110 hover:z-30">
-			<img src="{library}" alt="plot" class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
-		</div>
-	</div>
 
 		<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 
 			<!-- REDDIT -->
 
-			<div class="max-w-md rounded-xl overflow-hidden  bg-hush-grey-500 text-black mr-24 hover:scale-110 transform transition shadow-xl">
+			<div class="flex-1 ml-6 mr-6 max-w-md rounded-xl overflow-hidden bg-hush-grey-500 text-black hover:scale-110 transform transition shadow-xl">
 				<a href="https://www.reddit.com/r/Italia/comments/1bjajuo/qualcuno_di_voi_sente_il_bisogno_di_coprirsi_o/">
 				<img class="w-full max-h-40 object-cover" src="{reddit_post}" alt="Reddit post">
 				<div class="px-6 py-4">
@@ -129,7 +126,7 @@
 			</div>
 			<!-- FORM -->
 
-			<div class="max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-24 hover:scale-110 transform transition">
+			<div class="flex-1 ml-6 mr-6 max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black  hover:scale-110 transform transition">
 				<div class="max-w-md max-h-40 bg-black">
 					<img class="w-full max-h-40 object-contain" src="{plot_blue}" alt="Plot">
 				</div>
