@@ -222,5 +222,7 @@
 </body>
 <style lang="scss">
     @use '$lib/color';
-
+    html {
+      background: #222222;
+    }
 </style>
