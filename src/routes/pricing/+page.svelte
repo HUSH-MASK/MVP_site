@@ -6,6 +6,7 @@
 	import board from '$lib/assets/board.jpg';
 	import prototype from '$lib/assets/prototype.jpg';
 	import experiment from '$lib/assets/experiment.jpg';
+	import { AccordionItem, Accordion } from 'flowbite-svelte';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 <nav class="bg-hush-grey-600/75 sticky top-0 z-50">
@@ -164,13 +165,127 @@
 -->
 
 <div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
+	<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">
+		Tech
+		<span class="text-hush-blue-500">
+					Specifications
+				</span>
+	</h1>
+</div>
+
+<div class="max-w-screen-md flex flex-wrap  justify-between mx-auto p-4 mb-12">
+
+<Accordion class="text-hush-white flex-1">
+	<AccordionItem class="text-hush-white">
+		<span slot="header" class="text-bold text-xl">Soundproofing</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				10-15 dB at low frequencies
+			</li>
+			<li>
+				20dB to 30dB at mid and high frequencies
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem>
+		<span slot="header" class="text-bold text-xl">Materials</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				Polyester fabric: 60%
+			</li>
+			<li>
+				Memory foam:16%
+			</li>
+			<li>
+				Polyurethane leather: 4%
+			</li>
+			<li>
+				ABS: 12%
+			</li>
+			<li>
+				PLA: 2%
+			</li>
+			<li>
+				Medical grade silicone: 1%
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem>
+		<span slot="header" class="text-bold text-xl">Microphone</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				Frequency range: 35-18 kHz
+			</li>
+			<li>
+				Microphone Sensitivity: -59 dB ± 3 dB (adapted to mask)
+			</li>
+			<li>
+				Signal-to-noise: 74 dB (adapted to mask)
+			</li>
+			<li>
+				Noise Cancellation: None (software noise suppression is recommended, like Krisp in Discord)
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem>
+		<span slot="header" class="text-bold text-xl">Connectivity</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				Connectivity: Bluetooth® 5.2 HFP and A2DP
+			</li>
+			<li>
+				Compatibility: Any device with Bluetooth connectivity
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem>
+		<span slot="header" class="text-bold text-xl">Sound</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				Frequency response: 50Hz-16kHz
+			</li>
+			<li>
+				Speaker sensitivity: 96dB±2.5dB
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem>
+		<span slot="header" class="text-bold text-xl">Battery</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				Continuous play up to 24 hours of listening time with a single charge
+			</li>
+			<li>
+				Standby time up to 10 days
+			</li>
+			<li>
+				Battery capacity: 600mAh
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem>
+		<span slot="header" class="text-bold text-xl">Dimensions</span>
+		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+			<li>
+				 Weight S/M size: ~265 gr. (9.4 oz)
+			</li>
+			<li>
+				Weight M/L size: ~280 gr. (9.8 oz)
+			</li>
+		</ul>
+	</AccordionItem>
+</Accordion>
+
+	</div>
+
+<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
 	<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center mb-5">
 		Voice
 		<span class="text-hush-blue-500">
 					dampening
 				</span>
 	</h1>
-	<p class="text-hush-white text-2xl mb-5 text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
+	<p class="text-hush-white text-2xl mb-12 text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
 		TACITUS reduces the volume of your voice up to -30dB. You could yell into your mask and your flatmates or partner could still sleep soundly next door.
 	</p>
 	<img src="{noise_chart}" alt="plot" class="max-w-screen-md mx-auto">

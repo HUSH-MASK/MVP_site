@@ -2,10 +2,6 @@
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
 	import ombra from '$lib/assets/ombra.webp';
- import noise_chart from '$lib/assets/noise_chart.png';
- import prototype from '$lib/assets/prototype.jpg';
- import experiment from '$lib/assets/experiment.jpg';
- import board from '$lib/assets/board.jpg';
  import {IconArrowRight} from '@tabler/icons-svelte';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
@@ -65,7 +61,7 @@
 		</li>
 	</ul>
 </div>
-<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-hush-blue-800  rounded-xl">
+<div class="max-w-screen-xl mx-auto p-4 bg-hush-blue-800  rounded-xl">
 	<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-12">HUSH! It's Tacitus</h1>
 
 	<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
@@ -76,29 +72,13 @@
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-hush-blue-500">Comfort</div>
 				<p class="text-hush-white text-base">
-					At the office, on the train, at home. TACITUS won't restrict your breathing or get too hot thanks to our in-built medical grade silicone valves.
+					At the office, on the train, at home. You can wear TACITUS , you won't even notice.
 				</p>
 			</div>
 			<div class="px-6 pt-4 pb-2">
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#reddit</span>
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
-			</div>
-		</div>
-
-		<!-- Soundproof -->
-
-		<div class="max-w-xs rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-12 hover:scale-110 transform transition">
-			<div class="px-6 py-4">
-				<div class="font-bold text-xl mb-2 text-hush-blue-500">Soundproof</div>
-				<p class="text-hush-white text-base">
-					Why whisper when you could scream as much as you want? Never worry about evesdroppers again.
-				</p>
-			</div>
-			<div class="px-6 pt-4 pb-2">
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#forms</span>
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#comfort</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#heat</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#wearability</span>
 			</div>
 		</div>
 
@@ -108,22 +88,75 @@
 			<div class="px-6 py-4">
 				<div class="font-bold text-xl mb-2 text-hush-blue-500">Adjustable</div>
 				<p class="text-hush-white text-base">
-					You already know one mask doesn't fit all. TACITUS has an adjustable system so you can fit it to your desired level of tightness and comfort.
+					Fully adjustable. Because there's no one-size-fits-all.
 				</p>
 			</div>
 			<div class="px-6 pt-4 pb-2">
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#forms</span>
-				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#questions</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#comfort</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#style</span>
+			</div>
+		</div>
+
+		<!-- Soundproof -->
+
+		<div class="max-w-xs rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-12 hover:scale-110 transform transition">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-hush-blue-500">Soundproof</div>
+				<p class="text-hush-white text-base">
+					Why whisper or moving to another room? Just speak up and never worry about eavesdroppers again.
+				</p>
+			</div>
+			<div class="px-6 pt-4 pb-2">
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#noise</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#soundproof</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#engineering</span>
+			</div>
+		</div>
+
+		</div>
+
+		<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
+
+		<!-- Bone conduction -->
+
+		<div class="max-w-xs rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-12 hover:scale-110 transform transition">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-hush-blue-500">Bone conduction audio</div>
+				<p class="text-hush-white text-base">
+					Keep your ears free. Bone conduction technology will enable you to wear other audio devices. Your Hi-Fi headphones will not sit in a drawer.
+				</p>
+			</div>
+			<div class="px-6 pt-4 pb-2">
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#audio</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#bone</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#free-ears</span>
+			</div>
+		</div>
+
+			<!-- Style -->
+
+		<div class="max-w-xs rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black mr-12 hover:scale-110 transform transition">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-hush-blue-500">Style</div>
+				<p class="text-hush-white text-base">
+					Tacitus is a wearable made in Italy. And it shows. <br><br>It's not just a mask, it's a statement.
+				</p>
+			</div>
+			<div class="px-6 pt-4 pb-2">
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-hush-white">#style</span>
+				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#italy</span>
 				<span class="inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2 text-hush-white">#masks</span>
 			</div>
 		</div>
+	</div>
+
+	<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 		<a href="{base}/pricing">
 			<button type="button" class="hover:scale-110 transform transition mt-12 font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl text-xl px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Get it now</button>
 		</a>
 	</div>
+
 </div>
-
-
 
 	<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
 		<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">

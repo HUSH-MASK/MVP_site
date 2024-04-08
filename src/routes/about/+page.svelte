@@ -39,7 +39,7 @@
 					</li>
 				</ul>
 			</div>
-			<button type="button" class="text-hush-grey-500">Get it now</button>
+			<button type="button" class="text-hush-grey-600">Get it now</button>
 		</div>
 	</nav>
 

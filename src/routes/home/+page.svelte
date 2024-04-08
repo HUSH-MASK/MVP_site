@@ -27,7 +27,7 @@
 					</li>
 					<li>
 						<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
-					</li>
+					</li>\
 					<li>
 						<a href="{base}/mask" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
 					</li>
@@ -39,7 +39,7 @@
 					</li>
 				</ul>
 			</div>
-			<button type="button" class="text-hush-grey-500">Get it now</button>
+			<button type="button" class="text-hush-grey-600">Get it now</button>
 		</div>
 	</nav>
 
