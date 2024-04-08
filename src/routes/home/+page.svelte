@@ -23,7 +23,7 @@
 			<div class="hidden w-full md:block md:w-auto" id="navbar-default">
 				<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 					<li>
-						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 hover:text-hush-blue-500" aria-current="page">Home</a>
+						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Home</a>
 					</li>
 					<li>
 						<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
@@ -81,6 +81,20 @@
 			</p>
 		</div>
 
+		<!-- SOLUTION -->
+
+		<div class="min-w-full max-w-screen-xl flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-12 mb-12 p-4 bg-hush-blue-800 border rounded-xl">
+			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-6 text-center">Meet our solution.</h1>
+			<h1 class="text-hush-white mr-auto text-3xl  mb-12 text-center">Because whispering was never an option</h1>
+
+			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
+				<a href="{base}/mask">
+					<button type="button" class="text-xl hover:scale-110 transform transition font-redhat text-hush-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-2xl">Discover TACITUS</button>
+				</a>
+			</div>
+
+		</div>
+
 		<div class="relative w-full max-w-full justify-center py-12 *:w-[33%] *:inline-block mt-6 mb-6">
 		<div class="-translate-y-8 scale-110 hover:z-30">
 			<img src="{social_anxiety}" alt="plot" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
@@ -134,20 +148,6 @@
 			</div>
 		</div>
 
-
-		<!-- SOLUTION -->
-
-		<div class="min-w-full max-w-screen-xl flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-24 p-4 bg-hush-blue-800 border rounded-xl">
-			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-6 text-center">Meet our solution.</h1>
-			<h1 class="text-hush-white mr-auto text-3xl  mb-12 text-center">Because whispering was never an option</h1>
-
-			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
-				<a href="{base}/mask">
-					<button type="button" class="text-xl hover:scale-110 transform transition font-redhat text-hush-white hover:text-white border-2 bg-hush-grey-500 border-hush-grey-500 hover:bg-hush-grey-500 focus:ring-4 focus:outline-none focus:ring-hush-grey-500 font-medium rounded-2xl  px-5 py-2.5 text-center me-2 mb-2 dark:border-hush-grey-500 dark:text-hush-white dark:hover:text-white dark:hover:bg-hush-grey-500 dark:focus:hush-grey-500">Discover TACITUS</button>
-				</a>
-			</div>
-
-		</div>
 	</div>
 
 	<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
