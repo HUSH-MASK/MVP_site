@@ -177,8 +177,8 @@
 <div class="max-w-screen-md flex flex-wrap  justify-between mx-auto p-4 mb-12">
 
 <Accordion class="text-hush-white flex-1">
-	<AccordionItem class="text-hush-white">
-		<span slot="header" class="text-bold text-xl">Soundproofing</span>
+	<AccordionItem class="text-hush-white border-b-2">
+		<span slot="header" class="text-bold text-xl ">Soundproofing</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
 		</div>
@@ -194,7 +194,8 @@
 			</li>
 		</ul>
 	</AccordionItem>
-	<AccordionItem>
+	<hr>
+	<AccordionItem  class="text-hush-white border-b-2">
 		<span slot="header" class="text-bold text-xl">Materials</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
@@ -223,7 +224,8 @@
 			</li>
 		</ul>
 	</AccordionItem>
-	<AccordionItem>
+	<hr>
+	<AccordionItem  class="text-hush-white border-b-2">
 		<span slot="header" class="text-bold text-xl">Microphone</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
@@ -246,7 +248,8 @@
 			</li>
 		</ul>
 	</AccordionItem>
-	<AccordionItem>
+	<hr>
+	<AccordionItem class="text-hush-white border-b-2">
 		<span slot="header" class="text-bold text-xl">Connectivity</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
@@ -263,7 +266,8 @@
 			</li>
 		</ul>
 	</AccordionItem>
-	<AccordionItem>
+	<hr>
+	<AccordionItem class="text-hush-white border-b-2">
 		<span slot="header" class="text-bold text-xl">Sound</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
@@ -280,7 +284,8 @@
 			</li>
 		</ul>
 	</AccordionItem>
-	<AccordionItem>
+	<hr>
+	<AccordionItem class="text-hush-white border-b-2">
 		<span slot="header" class="text-bold text-xl">Battery</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
@@ -300,7 +305,8 @@
 			</li>
 		</ul>
 	</AccordionItem>
-	<AccordionItem>
+	<hr>
+	<AccordionItem class="text-hush-white border-b-2">
 		<span slot="header" class="text-bold text-xl">Dimensions</span>
 		<div slot="arrowup">
 			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
