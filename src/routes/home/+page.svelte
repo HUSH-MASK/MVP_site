@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import MediaQuery from 'svelte-media-queries'
 	import logo from '$lib/assets/logo.png';
 	import  reddit_post from '$lib/assets/reddit_post.png';
 	import plot_blue from '$lib/assets/plot_blue.png';
@@ -7,107 +8,140 @@
 	import social_anxiety from '$lib/assets/social_anxiety.jpg';
 	import phone from '$lib/assets/phone.jpg';
 	import library from '$lib/assets/library.jpg';
+	import { Carousel } from 'flowbite-svelte';
+	import images from '$lib/assets/imageData/carousel.json';
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
-	<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
-		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-			<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
-				<img src={logo} class="h-14" alt="HUSH! Logo" />
-			</a>
-			<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-				<span class="sr-only">Open main menu</span>
-				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-				</svg>
-			</button>
-			<div class="hidden w-full md:block md:w-auto" id="navbar-default">
-				<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-					<li>
-						<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Home</a>
-					</li>
-					<li>
-						<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
-					</li>
-					<li>
-						<a href="{base}/mask" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
-					</li>
-					<li>
-						<a href="{base}/pricing" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
-					</li>
-					<li>
-						<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
-					</li>
-				</ul>
+<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
+	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+		<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
+			<img src={logo} class="h-14" alt="HUSH! Logo" />
+		</a>
+		<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+			<span class="sr-only">Open main menu</span>
+			<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+			</svg>
+		</button>
+		<div class="hidden w-full md:block md:w-auto" id="navbar-default">
+			<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+				<li>
+					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Home</a>
+				</li>
+				<li>
+					<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
+				</li>
+				<li>
+					<a href="{base}/mask" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
+				</li>
+				<li>
+					<a href="{base}/pricing" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
+				</li>
+				<li>
+					<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<button type="button" class="text-hush-grey-600">Get it now</button>
+	</div>
+</nav>
+
+<!-- TITLE-->
+
+<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-6 md:mt-24">
+	<h1 class="text-hush-white text-4xl md:text-6xl font-bold text-center">
+		Too many people
+		<span class="text-hush-blue-500">watching</span>
+		, too many
+		<span class="text-hush-blue-500">listening</span>
+		?
+	</h1>
+
+	<MediaQuery query='(min-width: 769px)' let:matches>
+		{#if matches}
+			<p class="text-hush-white center mt-6 md:mt-10 text-xl md:text-2xl text-center">
+				Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With HUSH!, regain control over your conversation.
+				<br>
+				Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.
+			</p>
+		{/if}
+	</MediaQuery>
+
+	<MediaQuery query='(max-width: 768px)' let:matches>
+		{#if matches}
+			<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-6 mt-12">
+				<p class="text-hush-white text-xl md:text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
+					Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With HUSH!, regain control over your conversation.</p>
+				<p class="text-hush-white text-xl md:text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+					Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.</p>
 			</div>
-			<button type="button" class="text-hush-grey-600">Get it now</button>
-		</div>
-	</nav>
+		{/if}
+	</MediaQuery>
 
-	<!-- TITLE-->
+	<h1 class="text-hush-white text-4xl md:text-6xl font-bold text-center mb-12 mt-16 md:mt-24">
+		Well, we
+		<span class="text-hush-blue-500">hear</span>
+		you.
+	</h1>
 
-	<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-24">
-		<h1 class="text-hush-white  text-6xl font-bold text-center">
-			Too many people
-			<span class="text-hush-blue-500">watching</span>
-			, too many
-			<span class="text-hush-blue-500">listening</span>
-			? <br><br> Well, we
-			<span class="text-hush-blue-500">hear</span>
-			you.
-		</h1>
-		<p class="text-hush-white center mt-10 text-xl text-center">Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With HUSH!, regain control over your conversations. Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.</p>
+	<!-- PROBLEM -->
 
-		<!-- PROBLEM -->
-
-		<div id="problem" class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
-			<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-right mb-5">
-				People
-				<span class="text-hush-blue-500">
-					Watching <br>
-				</span>
-				People
-				<span class="text-hush-blue-500">
-					Hearing
-				</span>
-			</h1>
-			<p class="text-hush-white text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
-				In quiet places like trains, speaking without disturbing others is a challenge. Whether chatting with fellow passengers or on the phone, people worry about causing inconvenience or invading privacy.
-			</p>
-			<p class="text-hush-white text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
-				Not only that, but we found out that there are people concerned about showing their faces in public. They feel exposed and vulnerable, and they want to protect their privacy.
-			</p>
-		</div>
+	<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-6">
+		<p class="text-hush-white text-xl md:text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
+			In quiet places like trains, speaking without disturbing others is a challenge. Whether chatting with fellow passengers or on the phone, people worry about causing inconvenience or invading privacy.
+		</p>
+		<p class="text-hush-white text-xl md:text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+			Not only that, but we found out that there are people concerned about showing their faces in public. They feel exposed and vulnerable, and they want to protect their privacy.
+		</p>
+	</div>
 
 		<!-- SOLUTION -->
 
 		<div class="min-w-full max-w-md flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-12 mb-12 p-4 bg-hush-blue-800 border rounded-xl">
-			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12 mb-6 text-center">Meet our solution.</h1>
+			<h1 class="text-hush-white text-4xl md:text-7xl font-bold mt-12 mb-6 text-center">Meet our solution.</h1>
 
 			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 				<a href="{base}/mask">
-					<button type="button" class="text-xl hover:scale-110 transform transition font-redhat text-hush-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-2xl">Discover TACITUS</button>
+					<button type="button"
+									class="text-lg md:text-xl hover:scale-110 transform transition font-redhat text-hush-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-2xl">Discover TACITUS</button>
 				</a>
 			</div>
-
 		</div>
 
-		<div class="relative max-w-full  py-12 *:w-[29%] *:inline-block mt-6 mb-6">
-			<div class="-translate-y-8 translate-x-16 scale-110 hover:z-30">
-				<img src="{social_anxiety}" alt="plot" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+	<MediaQuery query='(max-width: 768px)' let:matches>
+		{#if matches}
+			<div class="flex space-y-4 overflow-visible">
+				<Carousel {images} duration={3900} let:Indicators>
+					<div class="flex overflow-visible" slot="slide"  let:Slide let:index>
+						<Slide image={images[index]} />
+					</div>
+					<Indicators />
+				</Carousel>
 			</div>
-			<div class="translate-x-16 scale-110 hover:z-30">
-				<img src="{phone}" alt="plot" class= "rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+		{/if}
+		</MediaQuery>
+
+	<MediaQuery query='(min-width: 769px)' let:matches>
+		{#if matches}
+			<div class="relative max-w-full  py-12 *:w-[29%] *:inline-block mt-6 mb-6">
+				<div class="-translate-y-8 translate-x-16 scale-110 hover:z-30">
+					<img src="{social_anxiety}" alt="social_anxiety" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+				</div>
+				<div class="translate-x-16 scale-110 hover:z-30">
+					<img src="{phone}" alt="phone" class= "rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+				</div>
+				<div class="translate-y-8 translate-x-16 scale-110 hover:z-30">
+					<img src="{library}" alt="library" class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
+				</div>
 			</div>
-			<div class="translate-y-8 translate-x-16 scale-110 hover:z-30">
-				<img src="{library}" alt="plot" class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
-			</div>
-		</div>
+		{/if}
+		</MediaQuery>
 
 		<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 
 			<!-- REDDIT -->
 
-			<div class="flex-1 ml-6 mr-6 max-w-md rounded-xl overflow-hidden bg-hush-grey-500 text-black hover:scale-110 transform transition shadow-xl">
+			<div class="ml-6 mr-6 mt-6 mb-6 max-w-md rounded-xl overflow-hidden bg-hush-grey-500 text-black hover:scale-110 transform transition shadow-xl">
 				<a href="https://www.reddit.com/r/Italia/comments/1bjajuo/qualcuno_di_voi_sente_il_bisogno_di_coprirsi_o/">
 				<img class="w-full max-h-40 object-cover" src="{reddit_post}" alt="Reddit post">
 				<div class="px-6 py-4">
@@ -126,14 +160,14 @@
 			</div>
 			<!-- FORM -->
 
-			<div class="flex-1 ml-6 mr-6 max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black  hover:scale-110 transform transition">
+			<div class="ml-6 mr-6 mt-6 mb-6 max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black  hover:scale-110 transform transition">
 				<div class="max-w-md max-h-40 bg-black">
 					<img class="w-full max-h-40 object-contain" src="{plot_blue}" alt="Plot">
 				</div>
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">We asked, you answered</div>
 					<p class="text-hush-white text-base">
-						We created a form to collect data on the use of the phone in public places and the need for privacy. This from was shared on social media, university groups and forums.
+						We created a form to collect data on the use of the phone in public places and the need for privacy. We shared it on social media, university groups and forums.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">

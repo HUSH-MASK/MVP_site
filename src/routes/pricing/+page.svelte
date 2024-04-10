@@ -75,7 +75,7 @@
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
 											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
 										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Bluethoot
+													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Bluetooth
 								</p>
 							</div>
 							<div class="mb-4 w-full md:w-4/12">
@@ -140,7 +140,7 @@
             </span>
         </h1>
         <p class="text-hush-white text-2xl text-center mr-auto ml-12 w-1/2  bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-            <span class="font-bold"> ESP32 Mini </span> for Bluethoot connection <br>
+            <span class="font-bold"> ESP32 Mini </span> for Bluetooth connection <br>
             <span class="font-bold">I2S communication protocol </span> for communication<br>
             <span class="font-bold">HFP profile </span>for dual communication <br>
             <span class="font-bold">Bone conduciton </span>for output audio <br>
