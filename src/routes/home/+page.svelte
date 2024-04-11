@@ -109,9 +109,12 @@
 		{#if matches}
 			<div class="max-w-4x max-h-[224px] overflow-hidden rounded-2xl">
 				<Carousel  {images} duration={3900}>
-					{#each images as image}
-						<img src={image.src} alt={image.alt} class="w-full object-cover"/>
-					{/each}
+						<img src="{social_anxiety}" alt="social_anxiety"
+								 class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition" />
+						<img src="{phone}" alt="phone"
+								 class="rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition" />
+						<img src="{library}" alt="library"
+								 class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition" />
 					</Carousel>
 			</div>
 		{/if}
