@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { initGA } from './analytics.js';
+	import { initGA } from '../analytics.js';
 
 	// Initialize Google Analytics
 	initGA();
