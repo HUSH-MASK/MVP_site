@@ -10,7 +10,23 @@
 	import phone from '$lib/assets/phone.jpg';
 	import library from '$lib/assets/library.jpg';
 	import { Carousel, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
-	import images from '$lib/assets/imageData/carousel.json';
+	export const images = [
+		{
+			alt: "social_anxiety",
+			src: social_anxiety,
+			title: "social_anxiety"
+		},
+		{
+			alt: "phone",
+			src: phone,
+			title: "phone"
+		},
+		{
+			alt: "library",
+			src: library,
+			title: "library"
+		}
+	];
 
 	let activeClass = 'text-white bg-hush-blue-800 md:text-white-700 md:dark:text-white dark:bg-hush-blue-800';
 	$: activeUrl = $page.url.pathname;
