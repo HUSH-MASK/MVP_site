@@ -400,7 +400,7 @@
 	</div>
 </div>
 
-<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
+<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 -translate-y-24 md:-translate-y-0">
 	<h1 class="text-white text-4xl md:text-6xl font-bold mb-5 text-right">
 		Voice
 		<span class="text-hush-blue-500">
@@ -408,12 +408,13 @@
 				</span>
 	</h1>
 	<p
-		class="text-hush-white md:text-2xl mb-12 text-center md:ml-auto md:mr-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
+		class="text-hush-white md:text-2xl mb-6 text-center md:ml-auto md:mr-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
 		TACITUS reduces the volume of your voice up to -30dB. You could yell into your mask and your flatmates or partner
 		could still sleep soundly next door.
 	</p>
-	<img src="{noise_chart}" alt="plot" class="max-w-sm md:max-w-screen-md mx-auto">
 </div>
+
+<img src="{noise_chart}" alt="plot" class="max-w-xs md:max-w-screen-md mx-auto -translate-y-24 md:-translate-y-0 md:mb-12 md:mt-12">
 
 <footer class="bg-hush-blue-800 rounded-lg shadow m-4">
 	<div class="max-w-screen-xl mx-auto p-4 flex flex-col md:flex-row md:items-center md:justify-between">
