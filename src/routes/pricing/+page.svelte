@@ -10,6 +10,7 @@
 
 	let activeClass = 'text-white bg-hush-blue-800 md:text-white-700 md:dark:text-white dark:bg-hush-blue-800';
 	$: activeUrl = $page.url.pathname;
+
 </script>
 
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
