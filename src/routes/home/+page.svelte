@@ -9,6 +9,7 @@
 	import phone from '$lib/assets/phone.jpg';
 	import library from '$lib/assets/library.jpg';
 	import { Carousel, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import Indicators from 'flowbite-svelte/Indicators.svelte';
 	export const images = [
 		{
 			alt: "social_anxiety",
