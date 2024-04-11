@@ -1,12 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+module.exports = {
+  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {fontFamily: {
         redhat: 'Red Hat Display, sans-serif',
       },
     },
     colors: {
+      primary: {"50":"#f0f9ff","100":"#e0f2fe","200":"#bae6fd","300":"#7dd3fc","400":"#38bdf8","500":"#0ea5e9","600":"#0284c7","700":"#0369a1","800":"#075985","900":"#0c4a6e"},
       'hush-blue': {
         100: '#69bce5',
         200: '#53b2e1',
@@ -30,93 +34,8 @@ export default {
         900: '#0E0E0E',
       },
       'hush-white': '#f8f8f8',
-      'black': '#000000',
-      // red variations
-      'red': {
-        100: '#ff6e6e',
-        200: '#ff5b5b',
-        300: '#ff4949',
-        400: '#ff3636',
-        500: '#ff2424',
-        600: '#ff1111',
-        700: '#f90000',
-        800: '#e60000',
-        900: '#d40000',
-      },
-      // yellow variations
-      'yellow': {
-        100: '#ffed6e',
-        200: '#ffeb5b',
-        300: '#ffe949',
-        400: '#ffe736',
-        500: '#ffe524',
-        600: '#ffe311',
-        700: '#ffd900',
-        800: '#e6c600',
-        900: '#d4b400',
-      },
-      // purple variations
-      'purple': {
-        100: '#d46ed4',
-        200: '#c55bc5',
-        300: '#b849b8',
-        400: '#a936a9',
-        500: '#982498',
-        600: '#871187',
-        700: '#760076',
-        800: '#660066',
-        900: '#550055',
-      },
-      // green variations
-      'green': {
-        100: '#6ed46e',
-        200: '#5bc55b',
-        300: '#49b849',
-        400: '#36a936',
-        500: '#249824',
-        600: '#118711',
-        700: '#007600',
-        800: '#006600',
-        900: '#005500',
-      },
-      // pink variations
-      'pink': {
-        100: '#ff6ed4',
-        200: '#ff5bc5',
-        300: '#ff49b8',
-        400: '#ff36a9',
-        500: '#ff2498',
-        600: '#ff1187',
-        700: '#ff0076',
-        800: '#e60066',
-        900: '#d40055',
-      },
-      // blue variations
-      'blue': {
-        100: '#6e6ed4',
-        200: '#5b5bc5',
-        300: '#4949b8',
-        400: '#3636a9',
-        500: '#242498',
-        600: '#111187',
-        700: '#000076',
-        800: '#000066',
-        900: '#000055',
-      },
-      //white variations
-      'white': {
-        100: '#f8f8f8',
-        200: '#f1f1f1',
-        300: '#ebebeb',
-        400: '#e4e4e4',
-        500: '#dedede',
-        600: '#d7d7d7',
-        700: '#d1d1d1',
-        800: '#cacaca',
-        900: '#c4c4c4',
-      },
-      // grey variations
-      'grey': {
+      'gray':{
+        50: '#f9fafb',
         100: '#808080',
         200: '#696969',
         300: '#535353',
@@ -126,8 +45,11 @@ export default {
         700: '#1B1B1B',
         800: '#151515',
         900: '#0E0E0E',
-      },
+      }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
+
+  darkMode: 'class',
+
 }
