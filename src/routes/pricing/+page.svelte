@@ -2,392 +2,419 @@
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
 	import ombra from '$lib/assets/ombra.webp';
-	import noise_chart from '$lib/assets/noise_chart.png';
-	import board from '$lib/assets/board.jpg';
-	import prototype from '$lib/assets/prototype.jpg';
-	import experiment from '$lib/assets/experiment.jpg';
-	import { AccordionItem, Accordion } from 'flowbite-svelte';
-	import { ChevronDoubleUpOutline, ChevronDoubleDownOutline } from 'flowbite-svelte-icons';
-</script>
-<body class="min-h-screen bg-hush-grey-600 font-redhat">
-<nav class="bg-hush-grey-600/75 sticky top-0 z-50">
-	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-		<a href="{base}/home" class="flex items-center space-x-3 rtl:space-x-reverse">
-			<img src={logo} class="h-14" alt="HUSH! Logo" />
-		</a>
-		<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-			<span class="sr-only">Open main menu</span>
-			<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-			</svg>
-		</button>
-		<div class="hidden w-full md:block md:w-auto" id="navbar-default">
-			<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-				<li>
-					<a href="{base}/home" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Home</a>
-				</li>
-				<li>
-					<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">About</a>
-				</li>
-				<li>
-					<a href="{base}/mask" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Services</a>
-				</li>
-				<li>
-					<a href="{base}/pricing" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Pricing</a>
-				</li>
-				<li>
-					<a href="{base}/about" class="text-hush-white block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-hush-blue-500">Contact</a>
-				</li>
-			</ul>
-		</div>
-		<button type="button" class="text-hush-grey-500">Get it now</button>
-	</div>
-</nav>
+	import { Accordion, AccordionItem, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import { ChevronDoubleDownOutline, ChevronDoubleUpOutline } from 'flowbite-svelte-icons';
+	import MediaQuery from 'svelte-media-queries';
+	import { page } from '$app/stores';
 
-<!-- Container for demo purpose -->
-<div class="container my-6 mx-auto md:px-6">
-	<!-- Section: Design Block -->
-	<section class="mb-32">
-		<!-- Jumbotron -->
-		<div class="container mx-auto xl:px-32">
-			<div class="grid items-center lg:grid-cols-2">
-				<div class="mb-12 lg:mb-0">
-					<div
-						class=" text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-hush-grey-700 dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
-						<h2 class="mb-2 pb-2 text-4xl text-hush-white font-bold">TACITUS mask</h2>
-						<p class="mb-6 pb-2  text-xl font-bold text-hush-white dark:text-hush-white">
-							for 99€
-						</p>
-						<p class="mb-6 pb-2  text-hush-white dark:text-hush-white">
-							Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks for Italian style.
-						</p>
-						<div class="mb-6 flex flex-wrap">
-							<div class="mb-4 w-full md:w-4/12">
-								<p class="flex">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
-										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Soundproof
+	let activeClass = 'text-white bg-hush-blue-800 md:text-white-700 md:dark:text-white dark:bg-hush-blue-800';
+	$: activeUrl = $page.url.pathname;
+</script>
+
+<body class="min-h-screen bg-hush-grey-600 font-redhat">
+
+<Navbar class="bg-hush-grey-600">
+	<NavBrand href="{base}/home">
+		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
+	</NavBrand>
+	<div class="flex md:order-2 bg-hush-grey-600">
+		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
+									menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600" />
+	</div>
+	<NavUl {activeUrl} {activeClass} class="order-1 mr-6 ml-6 bg-hush-grey-600"
+				 classUl="bg-hush-grey-600 border-hush-blue-800">
+		<NavLi class="text-hush-white" href="{base}/home">Home</NavLi>
+		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
+		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
+		<NavLi class="text-hush-white" href="{base}/pricing">Pricing</NavLi>
+	</NavUl>
+</Navbar>
+
+<MediaQuery query='(max-width: 768px)' let:matches>
+	{#if matches}
+		<div>
+			<div>
+				<img src="{ombra}"
+						 class="translate-y-12 w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+			</div>
+			<div class="-translate-y-36 container my-6 mx-auto md:px-6">
+				<div class="container mx-auto xl:px-32">
+					<div class="grid items-center lg:grid-cols-2">
+						<div class="mb-12 lg:mb-0">
+							<div
+								class="bg-opacity-5 text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+								<h2 class="mb-2 pb-2 text-4xl  font-bold text-hush-blue-500">TACITUS</h2>
+								<p class="mb-6 pb-2  text-xl font-bold text-hush-white dark:text-hush-white">
+									for 99€
 								</p>
-							</div>
-							<div class="mb-4 w-full md:w-4/12">
-								<p class="flex">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
-										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Bluethoot
+								<p class="mb-6 pb-2  text-hush-white dark:text-hush-white">
+									Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks
+									for Italian style.
 								</p>
-							</div>
-							<div class="mb-4 w-full md:w-4/12">
-								<p class="flex">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
-										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Compatible with all devices
-								</p>
-							</div>
-							<div class="mb-4 w-full md:w-4/12">
-								<p class="flex">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
-										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Comfort
-								</p>
-							</div>
-							<div class="mb-4 w-full md:w-4/12">
-								<p class="flex">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
-										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Style
-								</p>
-							</div>
-							<div class="mb-4 w-full md:w-4/12">
-								<p class="flex">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-											 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
-										<path stroke-linecap="round" stroke-linejoin="round"
-													d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>2 years warranty
-								</p>
+								<div class="mb-6 flex flex-wrap">
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Soundproof
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Bluetooth
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Compatible with all devices
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Comfort
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Style
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											2 years warranty
+										</p>
+									</div>
+								</div>
+								<button type="button"
+												class="mb-3inline-block rounded bg-hush-blue-600 px-12 pt-3.5 pb-3 text-sm font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-hush-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-hush-blue-600 dark:text-hush-white dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+												data-te-ripple-init data-te-ripple-color="light">
+									Buy now
+								</button>
 							</div>
 						</div>
-						<button type="button"
-										class="mb-3inline-block rounded bg-hush-blue-600 px-12 pt-3.5 pb-3 text-sm font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-hush-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-hush-blue-600 dark:text-hush-white dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
-										data-te-ripple-init data-te-ripple-color="light">
-							Buy now
-						</button>
+						<MediaQuery query='(min-width: 769px)' let:matches>
+							{#if matches}
+								<div>
+									<img src="{ombra}"
+											 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+								</div>
+							{/if}
+						</MediaQuery>
 					</div>
-				</div>
-
-				<div>
-					<img src="{ombra}"
-							 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
 				</div>
 			</div>
 		</div>
-		<!-- Jumbotron -->
-	</section>
-	<!-- Section: Design Block -->
-</div>
+	{/if}
+</MediaQuery>
+
+<MediaQuery query='(min-width: 769px)' let:matches>
+	{#if matches}
+		<div class="container my-6 mx-auto md:px-6">
+			<section class="mb-32">
+				<div class="container mx-auto xl:px-32">
+					<div class="grid items-center lg:grid-cols-2">
+						<div class="mb-12 lg:mb-0">
+							<div
+								class="bg-opacity-30 text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+								<h2 class="mb-2 pb-2 text-4xl text-hush-blue-500 font-bold">TACITUS</h2>
+								<p class="mb-6 pb-2  text-xl font-bold text-hush-white dark:text-hush-white">
+									for 99€
+								</p>
+								<p class="mb-6 pb-2  text-hush-white dark:text-hush-white">
+									Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks
+									for Italian style.
+								</p>
+								<div class="mb-6 flex flex-wrap">
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Soundproof
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Bluetooth
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Compatible with all devices
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Comfort
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											Style
+										</p>
+									</div>
+									<div class="mb-4 w-full md:w-4/12">
+										<p class="flex">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+													 stroke="currentColor" class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600">
+												<path stroke-linecap="round" stroke-linejoin="round"
+															d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+											</svg>
+											2 years warranty
+										</p>
+									</div>
+								</div>
+								<button type="button"
+												class="mb-3inline-block rounded bg-hush-blue-600 px-12 pt-3.5 pb-3 text-sm font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-hush-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-hush-blue-600 dark:text-hush-white dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+												data-te-ripple-init data-te-ripple-color="light">
+									Buy
+								</button>
+							</div>
+						</div>
+						<MediaQuery query='(min-width: 769px)' let:matches>
+							{#if matches}
+								<div>
+									<img src="{ombra}"
+											 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+								</div>
+							{/if}
+						</MediaQuery>
+					</div>
+				</div>
+				<!-- Jumbotron -->
+			</section>
+			<!-- Section: Design Block -->
+		</div>
+	{/if}
+</MediaQuery>
+
 <!-- Container for demo purpose -->
 
-<!--
-    <div class="max-w-screen-xl mx-auto p-4 mb-12 mt-12">
-        <h1 class="text-hush-white text-7xl font-bold mt-5 text-end mb-5">
-            Technical
-            <span class="text-hush-blue-500">
-                Characteristics
-            </span>
-        </h1>
-        <p class="text-hush-white text-2xl text-center mr-auto ml-12 w-1/2  bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-            <span class="font-bold"> ESP32 Mini </span> for Bluethoot connection <br>
-            <span class="font-bold">I2S communication protocol </span> for communication<br>
-            <span class="font-bold">HFP profile </span>for dual communication <br>
-            <span class="font-bold">Bone conduciton </span>for output audio <br>
-            <span class="font-bold">Soundproof shield </span>for noise reduction <br>
-            <span class="font-bold">Termal shield </span>for heat dissipation
-        </p>
-    </div>
+<div class="-translate-y-36 md:-translate-y-0">
 
-    <div class="max-w-screen-xl  justify-between mx-auto p-4 mt-24">
-		<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-left mb-5">The
+	<div class="max-w-screen-xl mx-auto p-4 mb-12">
+		<h1 class="text-white text-5xl md:text-7xl font-bold mt-5 mb-5 text-right">
+			Tech
 			<span class="text-hush-blue-500">
-				Price
-			</span>
-		</h1> 
-		<p class="text-hush-white text-2xl mt- text-center ml-auto mr-12  w-1/2 bg-hush-blue-800 border rounded-xl border-hush-blue-800 shadow-xl">
-			Available now for only: <br>
-            <span class="text-3x1 font-bold">
-                99€
-            </span>
-		</p>
-    </div>
-
--->
-
-<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
-	<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">
-		Tech
-		<span class="text-hush-blue-500">
 					Specifications
 				</span>
-	</h1>
-</div>
-
-<div class="max-w-screen-md flex flex-wrap  justify-between mx-auto p-4 mb-12">
-
-<Accordion class="text-hush-white flex-1">
-	<AccordionItem class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl ">Soundproofing</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				10-15 dB at low frequencies
-			</li>
-			<li>
-				20dB to 30dB at mid and high frequencies
-			</li>
-		</ul>
-	</AccordionItem>
-	<hr>
-	<AccordionItem  class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl">Materials</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				Polyester fabric: 60%
-			</li>
-			<li>
-				Memory foam:16%
-			</li>
-			<li>
-				Polyurethane leather: 4%
-			</li>
-			<li>
-				ABS: 12%
-			</li>
-			<li>
-				PLA: 2%
-			</li>
-			<li>
-				Medical grade silicone: 1%
-			</li>
-		</ul>
-	</AccordionItem>
-	<hr>
-	<AccordionItem  class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl">Microphone</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				Frequency range: 35-18 kHz
-			</li>
-			<li>
-				Microphone Sensitivity: -59 dB ± 3 dB (adapted to mask)
-			</li>
-			<li>
-				Signal-to-noise: 74 dB (adapted to mask)
-			</li>
-			<li>
-				Noise Cancellation: None (software noise suppression is recommended, like Krisp in Discord)
-			</li>
-		</ul>
-	</AccordionItem>
-	<hr>
-	<AccordionItem class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl">Connectivity</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				Connectivity: Bluetooth® 5.2 HFP and A2DP
-			</li>
-			<li>
-				Compatibility: Any device with Bluetooth connectivity
-			</li>
-		</ul>
-	</AccordionItem>
-	<hr>
-	<AccordionItem class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl">Sound</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				Frequency response: 50Hz-16kHz
-			</li>
-			<li>
-				Speaker sensitivity: 96dB±2.5dB
-			</li>
-		</ul>
-	</AccordionItem>
-	<hr>
-	<AccordionItem class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl">Battery</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				Continuous play up to 24 hours of listening time with a single charge
-			</li>
-			<li>
-				Standby time up to 10 days
-			</li>
-			<li>
-				Battery capacity: 600mAh
-			</li>
-		</ul>
-	</AccordionItem>
-	<hr>
-	<AccordionItem class="text-hush-white border-b-2">
-		<span slot="header" class="text-bold text-xl">Dimensions</span>
-		<div slot="arrowup">
-			<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
-		</div>
-		<span slot="arrowdown">
-      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
-    </span>
-		<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
-			<li>
-				 Weight S/M size: ~265 gr. (9.4 oz)
-			</li>
-			<li>
-				Weight M/L size: ~280 gr. (9.8 oz)
-			</li>
-		</ul>
-	</AccordionItem>
-</Accordion>
-
+		</h1>
 	</div>
 
-<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
-	<h1 class="text-hush-white ml-auto text-7xl font-bold mt-5 text-center mb-5">
-		Voice
-		<span class="text-hush-blue-500">
-					dampening
-				</span>
-	</h1>
-	<p class="text-hush-white text-2xl mb-12 text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
-		TACITUS reduces the volume of your voice up to -30dB. You could yell into your mask and your flatmates or partner could still sleep soundly next door.
-	</p>
-	<img src="{noise_chart}" alt="plot" class="max-w-screen-md mx-auto">
-</div>
+	<div class="max-w-screen-md flex flex-wrap justify-between mx-auto p-4 mb-12">
 
-<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12 mt-12">
-	<h1 class="text-hush-white mr-auto text-7xl font-bold mt-5 text-center mb-5">
-		Engineering
-		<span class="text-hush-blue-500">
-					the Italian way
-				</span>
-	</h1>
-	<p class="text-hush-white text-2xl mb-5 text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
-		TACITUS is designed and built in Italy both in the flesh and in the software.
-	</p>
-	<div class="relative w-full max-w-full justify-center py-12 *:w-[33%] *:inline-block">
-		<div class="-translate-y-8 scale-110 hover:z-30">
-			<img src="{board}" alt="plot" class="rounded-3xl z-0 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
-		</div>
-		<div class="scale-110 hover:z-30">
-			<img src="{prototype}" alt="plot" class= "rounded-3xl z-10 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
-		</div>
-		<div class="translate-y-8 scale-110 hover:z-30">
-			<img src="{experiment}" alt="plot" class="rounded-3xl z-20 shadow-2xl hover:scale-110 hover:z-30 transform transition"/>
-		</div>
+		<Accordion flush class="text-hush-white flex-1">
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl">Soundproofing</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						10-15 dB at low frequencies
+					</li>
+					<li>
+						20dB to 30dB at mid and high frequencies
+					</li>
+				</ul>
+			</AccordionItem>
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl hover:text-hush-blue-800">Materials</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						Polyester fabric: 60%
+					</li>
+					<li>
+						Memory foam:16%
+					</li>
+					<li>
+						Polyurethane leather: 4%
+					</li>
+					<li>
+						ABS: 12%
+					</li>
+					<li>
+						PLA: 2%
+					</li>
+					<li>
+						Medical grade silicone: 1%
+					</li>
+				</ul>
+			</AccordionItem>
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl hover:text-hush-blue-800">Microphone</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						Frequency range: 35-18 kHz
+					</li>
+					<li>
+						Microphone Sensitivity: -59 dB ± 3 dB (adapted to mask)
+					</li>
+					<li>
+						Signal-to-noise: 74 dB (adapted to mask)
+					</li>
+					<li>
+						Noise Cancellation: None (software noise suppression is recommended, like Krisp in Discord)
+					</li>
+				</ul>
+			</AccordionItem>
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl hover:text-hush-blue-800">Connectivity</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						Connectivity: Bluetooth® 5.2 HFP and A2DP
+					</li>
+					<li>
+						Compatibility: Any device with Bluetooth connectivity
+					</li>
+				</ul>
+			</AccordionItem>
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl hover:text-hush-blue-800">Sound</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						Frequency response: 50Hz-16kHz
+					</li>
+					<li>
+						Speaker sensitivity: 96dB±2.5dB
+					</li>
+				</ul>
+			</AccordionItem>
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl hover:text-hush-blue-800">Battery</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						Continuous play up to 24 hours of listening time with a single charge
+					</li>
+					<li>
+						Standby time up to 10 days
+					</li>
+					<li>
+						Battery capacity: 600mAh
+					</li>
+				</ul>
+			</AccordionItem>
+			<AccordionItem class="text-hush-white font-bold">
+				<span slot="header" class="text-bold text-xl hover:text-hush-blue-800">Dimensions</span>
+				<div slot="arrowup">
+					<ChevronDoubleUpOutline class="h-6 w-6 -me-0.5" />
+				</div>
+				<span slot="arrowdown">
+      <ChevronDoubleDownOutline class="h-6 w-6  -me-0.5" />
+    </span>
+				<ul class="list-disc ps-5 dark:text-hush-white text-hush-white">
+					<li>
+						Weight S/M size: ~265 gr. (9.4 oz)
+					</li>
+					<li>
+						Weight M/L size: ~280 gr. (9.8 oz)
+					</li>
+				</ul>
+			</AccordionItem>
+		</Accordion>
+
 	</div>
 </div>
 
-<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
-	<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
-    </span>
-		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
-			<li>
-				<a href="{base}/home#about" class="hover:underline me-4 md:me-6">About</a>
-			</li>
-			<li>
-				<a href="{base}/home" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-			</li>
-			<li>
-				<a href="{base}/home" class="hover:underline me-4 md:me-6">Licensing</a>
-			</li>
-			<li>
-				<a href="{base}/home#about" class="hover:underline">Contact</a>
-			</li>
+<footer class="bg-hush-blue-800 rounded-lg shadow m-4">
+	<div class="max-w-screen-xl mx-auto p-4 flex flex-col md:flex-row md:items-center md:justify-between">
+        <span class="text-sm text-white sm:text-center dark:text-hush-white">
+            © 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+        </span>
+		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
+			<li><a href="{base}/home#about" class="hover:underline me-4 md:me-6">About</a></li>
+			<li><a href="{base}/home" class="hover:underline me-4 md:me-6">Privacy Policy</a></li>
+			<li><a href="{base}/home" class="hover:underline me-4 md:me-6">Licensing</a></li>
+			<li><a href="{base}/home#about" class="hover:underline">Contact</a></li>
 		</ul>
 	</div>
 </footer>
 
+
 </body>
 <style lang="scss">
   @use '$lib/color';
-  html {
-    background: #222222;
-  }
 </style>
