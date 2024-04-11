@@ -213,4 +213,8 @@
 </body>
 <style lang="scss">
     @use '$lib/color';
+    body {
+      margin: 0;
+      height: 100%;
+    }
 </style>
