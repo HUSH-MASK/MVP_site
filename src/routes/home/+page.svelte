@@ -5,7 +5,6 @@
 	import logo from '$lib/assets/logo.png';
 	import reddit_post from '$lib/assets/reddit_post.png';
 	import plot_blue from '$lib/assets/plot_blue.png';
-	import { IconArrowRight } from '@tabler/icons-svelte';
 	import social_anxiety from '$lib/assets/social_anxiety.jpg';
 	import phone from '$lib/assets/phone.jpg';
 	import library from '$lib/assets/library.jpg';
@@ -51,7 +50,7 @@
 
 <!-- TITLE-->
 
-<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-6 md:mt-24">
+<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-6 mt-6 md:mt-24">
 	<h1 class="text-hush-white text-4xl md:text-6xl font-bold text-center">
 		Too many people
 		<span class="text-hush-blue-500">watching</span>
@@ -72,20 +71,20 @@
 
 	<MediaQuery query='(max-width: 768px)' let:matches>
 		{#if matches}
-			<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-6 mt-12">
+			<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-6 mt-6">
 				<p
-					class="text-hush-white text-xl md:text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
+					class="text-hush-white text-xl md:text-2xl text-center mx-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
 					Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With
 					HUSH!, regain control over your conversation.</p>
 				<p
-					class="text-hush-white text-xl md:text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+					class="text-hush-white text-xl md:text-2xl text-center mx-auto  max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
 					Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of
 					being heard. With HUSH!, your privacy is assured.</p>
 			</div>
 		{/if}
 	</MediaQuery>
 
-	<h1 class="text-hush-white text-4xl md:text-6xl font-bold text-center mb-12 mt-16 md:mt-24">
+	<h1 class="text-hush-white text-4xl md:text-6xl font-bold text-center mb-12 mt-12 md:mt-24">
 		Well, we
 		<span class="text-hush-blue-500">hear</span>
 		you.
@@ -93,14 +92,14 @@
 
 	<!-- PROBLEM -->
 
-	<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-6">
+	<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-3">
 		<p
-			class="text-hush-white text-xl md:text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
+			class="text-hush-white text-xl md:text-2xl text-center mx-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
 			In quiet places like trains, speaking without disturbing others is a challenge. Whether chatting with fellow
 			passengers or on the phone, people worry about causing inconvenience or invading privacy.
 		</p>
 		<p
-			class="text-hush-white text-xl md:text-2xl text-center ml-auto mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+			class="text-hush-white text-xl md:text-2xl text-center mx-auto  max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
 			Not only that, but we found out that there are people concerned about showing their faces in public. They feel
 			exposed and vulnerable, and they want to protect their privacy.
 		</p>
@@ -109,7 +108,7 @@
 	<!-- SOLUTION -->
 
 	<div
-		class="min-w-full max-w-md flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-12 mb-12 p-4 bg-hush-blue-800 border border-hush-blue-800 rounded-xl">
+		class="min-w-full max-w-md flex-col justify-self-center justify-items-center flex-wrap items-center justify-between mx-auto mt-6 mb-12 p-4 bg-hush-blue-800 border border-hush-blue-800 rounded-xl">
 		<h1 class="text-hush-white text-4xl md:text-7xl font-bold mt-12 mb-6 text-center">Meet our solution</h1>
 		<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 			<a href="{base}/mask">
@@ -160,7 +159,7 @@
 		<!-- REDDIT -->
 
 		<div
-			class="ml-6 mr-6 mt-6 mb-6 max-w-md rounded-xl overflow-hidden bg-hush-grey-500 text-black hover:scale-110 transform transition shadow-xl">
+			class="mx-auto md:ml-6 md:mr-6 mt-6 mb-6 max-w-md rounded-xl overflow-hidden bg-hush-grey-500 text-black hover:scale-110 transform transition shadow-xl">
 			<a href="https://www.reddit.com/r/Italia/comments/1bjajuo/qualcuno_di_voi_sente_il_bisogno_di_coprirsi_o/">
 				<img class="w-full max-h-40 object-cover" src="{reddit_post}" alt="Reddit post">
 				<div class="px-6 py-4">
@@ -169,7 +168,6 @@
 						We started a social campaign on Reddit to understand to understand who, when and why people want to cover
 						their face.
 					</p>
-					<IconArrowRight class="w-6 h-6 text-hush-blue-500 ml-auto" />
 				</div>
 				<div class="px-6 pt-4 pb-2">
 					<span
@@ -184,7 +182,7 @@
 		<!-- FORM -->
 
 		<div
-			class="ml-6 mr-6 mt-6 mb-6 max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black  hover:scale-110 transform transition">
+			class="mx-auto md:ml-6 md:mr-6 mt-6 mb-6 max-w-md rounded-xl overflow-hidden shadow-xl bg-hush-grey-500 text-black  hover:scale-110 transform transition">
 			<div class="max-w-md max-h-40 bg-black">
 				<img class="w-full max-h-40 object-contain" src="{plot_blue}" alt="Plot">
 			</div>

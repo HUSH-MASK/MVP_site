@@ -29,18 +29,18 @@
 	</NavUl>
 </Navbar>
 
-	<div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-between mx-auto p-4 mb-12 mt-6">
+<div class="max-w-screen-xl mx-auto p-4 mb-6 mt-6 md:mt-24">
 
 	<!-- MISSION-->
 
-	<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 md:mt-24">
-		<h1 class="text-hush-white mr-auto text-4xl font-bold mt-5 mb-5 text-right md:text-center md:text-6xl">Our
+	<div class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 md:mt-12">
+		<h1 class="text-hush-white md:mr-auto  text-4xl font-bold mt-5 mb-5 text-right md:text-center md:text-6xl">Our
 			<span class="text-hush-blue-500">
 				Mission
 			</span>
 		</h1>
 		<p
-			class="text-hush-white text-xl md:text-2xl text-center mr-auto ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
+			class="text-hush-white text-xl md:text-2xl text-center md:ml-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
 			HUSH! aims to reinvent the way people communicate on the phone in public places, ensuring maximum privacy via our sound-absorbing mask. The first coming as a complete Bluetooth wearable device.
 		</p>
 	</div>
@@ -48,22 +48,19 @@
 		<!-- ABOUT US-->
 
 		<div id="about" class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
-			<h1 class="text-hush-white ml-auto text-4xl font-bold mt-5 text-left mb-5 md:text-6xl md:text-center">
+			<h1 class="text-hush-white mr-auto text-4xl font-bold mt-5 text-left mb-5 md:text-6xl md:text-left">
 				About
 				<span class="text-hush-blue-500">
 				Us
 			</span>
-				<span class="text-hush-grey-600">
-				.....
-			</span>
 			</h1>
 			<div>
 				<p
-					class="text-hush-white text-xl md:text-2xl text-center mx-auto md:ml-auto md:mr-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+					class="text-hush-white text-xl md:text-2xl text-center mx-auto md:ml-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
 					We are a group of six university students eager to complete a project that is both ambitious and achievable, capable of bringing significant benefits to a concrete and everyday problem such as maintaining privacy during phone calls.
 				</p>
 				<p
-					class="text-hush-white text-xl md:text-2xl text-center mx:auto  md:mr-auto md:ml-12 max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
+					class="text-hush-white text-xl md:text-2xl text-center mx:auto md:ml-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
 					Do you have challenging ideas about it and want to collaborate with us? Write to hushinnovation@gmail.com !
 				</p>
 			</div>

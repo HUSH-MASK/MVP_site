@@ -3,6 +3,7 @@
 	import logo from '$lib/assets/logo.png';
 	import ombra from '$lib/assets/ombra.webp';
 	import { Accordion, AccordionItem, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import noise_chart from '$lib/assets/noise_chart.png';
 	import { ChevronDoubleDownOutline, ChevronDoubleUpOutline } from 'flowbite-svelte-icons';
 	import MediaQuery from 'svelte-media-queries';
 	import { page } from '$app/stores';
@@ -242,8 +243,8 @@
 
 <div class="-translate-y-36 md:-translate-y-0">
 
-	<div class="max-w-screen-xl mx-auto p-4 mb-12">
-		<h1 class="text-white text-5xl md:text-7xl font-bold mt-5 mb-5 text-right">
+	<div class="max-w-screen-xl mx-auto p-4">
+		<h1 class="text-white text-4xl md:text-6xl font-bold mt-5 mb-5 text-right">
 			Tech
 			<span class="text-hush-blue-500">
 					Specifications
@@ -251,7 +252,7 @@
 		</h1>
 	</div>
 
-	<div class="max-w-screen-md flex flex-wrap justify-between mx-auto p-4 mb-12">
+	<div class="max-w-screen-md flex flex-wrap justify-between mx-auto p-4 md:mb-12">
 
 		<Accordion flush class="text-hush-white flex-1">
 			<AccordionItem class="text-hush-white font-bold">
@@ -399,6 +400,21 @@
 	</div>
 </div>
 
+<div class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
+	<h1 class="text-white text-4xl md:text-6xl font-bold mb-5 text-right">
+		Voice
+		<span class="text-hush-blue-500">
+					dampening
+				</span>
+	</h1>
+	<p
+		class="text-hush-white md:text-2xl mb-12 text-center md:ml-auto md:mr-12 max-w-screen-md bg-hush-blue-800  rounded-xl border-hush-blue-800 shadow-xl border-8">
+		TACITUS reduces the volume of your voice up to -30dB. You could yell into your mask and your flatmates or partner
+		could still sleep soundly next door.
+	</p>
+	<img src="{noise_chart}" alt="plot" class="max-w-sm md:max-w-screen-md mx-auto">
+</div>
+
 <footer class="bg-hush-blue-800 rounded-lg shadow m-4">
 	<div class="max-w-screen-xl mx-auto p-4 flex flex-col md:flex-row md:items-center md:justify-between">
         <span class="text-sm text-white sm:text-center dark:text-hush-white">
@@ -417,6 +433,7 @@
 </body>
 <style lang="scss">
   @use '$lib/color';
+
   body {
     margin: 0;
     height: 100%;
