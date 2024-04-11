@@ -94,12 +94,12 @@
 
 	<div id="problem" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-3">
 		<p
-			class="text-hush-white text-xl md:text-2xl text-center mx-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
+			class="text-hush-white text-xl md:text-2xl text-center mx-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mr-auto md:ml-12">
 			In quiet places like trains, speaking without disturbing others is a challenge. Whether chatting with fellow
 			passengers or on the phone, people worry about causing inconvenience or invading privacy.
 		</p>
 		<p
-			class="text-hush-white text-xl md:text-2xl text-center mx-auto  max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
+			class="text-hush-white text-xl md:text-2xl text-center mx-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl md:ml-auto md:mr-12">
 			Not only that, but we found out that there are people concerned about showing their faces in public. They feel
 			exposed and vulnerable, and they want to protect their privacy.
 		</p>
