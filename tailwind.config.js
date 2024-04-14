@@ -45,7 +45,8 @@ module.exports = {
         700: '#1B1B1B',
         800: '#151515',
         900: '#0E0E0E',
-      }
+      },
+      'mask-gray': '#cfcfcf',
     },
   },
   plugins: [require('flowbite/plugin')],

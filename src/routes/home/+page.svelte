@@ -8,7 +8,18 @@
 	import social_anxiety from '$lib/assets/social_anxiety.jpg';
 	import phone from '$lib/assets/phone.jpg';
 	import library from '$lib/assets/library.jpg';
-	import { Carousel, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import {
+		Carousel,
+		Dropdown,
+		DropdownDivider,
+		DropdownItem,
+		Navbar,
+		NavBrand,
+		NavHamburger,
+		NavLi,
+		NavUl
+	} from 'flowbite-svelte';
+	import { ChevronDownOutline } from 'flowbite-svelte-icons';
 	export const images = [
 		{
 			alt: "social_anxiety",
@@ -44,7 +55,15 @@
 		<NavLi class="text-hush-white" href="{base}/home">Home</NavLi>
 		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
 		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
-		<NavLi class="text-hush-white" href="{base}/pricing">Pricing</NavLi>
+		<NavLi class="cursor-pointer text-hush-white">
+			Pricing<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
+		</NavLi>
+		<Dropdown class="w-44 z-20 bg-hush-grey-600 text-hush-white">
+			<DropdownItem href="{base}/pricing/ombra" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Ombra</DropdownItem>
+			<DropdownItem href="{base}/pricing/bianco" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Bianco</DropdownItem>
+			<DropdownItem href="{base}/pricing/nero" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Nero</DropdownItem>
+		</Dropdown>
+
 	</NavUl>
 </Navbar>
 
@@ -179,6 +198,7 @@
 				</div>
 			</a>
 		</div>
+
 		<!-- FORM -->
 
 		<div

@@ -2,10 +2,13 @@
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
 	import ombra from '$lib/assets/ombra.webp';
+	import white_mask from '$lib/assets/white_mask-removebg-preview.png';
+	import black_mask from '$lib/assets/black_mask.jpeg';
 	import { IconArrowRight } from '@tabler/icons-svelte';
-	import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import { Dropdown, DropdownItem, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
 	import MediaQuery from 'svelte-media-queries';
 	import { page } from '$app/stores';
+	import { ChevronDownOutline } from 'flowbite-svelte-icons';
 
 	let activeClass = 'text-white bg-hush-blue-800 md:text-white-700 md:dark:text-white dark:bg-hush-blue-800';
 	$: activeUrl = $page.url.pathname;
@@ -25,33 +28,115 @@
 		<NavLi class="text-hush-white" href="{base}/home">Home</NavLi>
 		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
 		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
-		<NavLi class="text-hush-white" href="{base}/pricing">Pricing</NavLi>
+		<NavLi class="cursor-pointer text-hush-white">
+			Pricing
+			<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
+		</NavLi>
+		<Dropdown class="w-44 z-20 bg-hush-grey-600 text-hush-white">
+			<DropdownItem href="{base}/pricing/ombra"
+										class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Ombra
+			</DropdownItem>
+			<DropdownItem href="{base}/pricing/bianco"
+										class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Bianco
+			</DropdownItem>
+			<DropdownItem href="{base}/pricing/nero"
+										class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Nero
+			</DropdownItem>
+		</Dropdown>
+
 	</NavUl>
 </Navbar>
 
 <MediaQuery query='(max-width: 768px)' let:matches>
 	{#if matches}
-		<div class="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12 mb-16">
-			<ul class="flex flex-col md:flex-row items-center justify-between mx-auto p-4">
-				<li class="flex flex-col md:w-1/2">
-					<a href="{base}/pricing">
-						<img src={ombra} alt="Ombra"
-								 class="z-0 ml-0 md:ml-16 max-w-full md:max-w-lg rounded-xl shadow-lg dark:shadow-black/20 bg-hush-grey-500" />
-						<h1 class="-translate-y-20 z-20 text-hush-white mr-auto text-4xl md:text-7xl font-bold mt-6 md:mt-60"><span
-							class="text-hush-blue-500">TACITUS </span>MASK</h1>
-						<div
-							class="flex-col text-hush-white hover:scale-110 shadow-xl transform transition block rounded-lg p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white dark:bg-hush-grey-700 bg-hush-grey-700 md:mt-0">
-							<p class="text-hush-white max-w-screen-sm text-xl md:text-2xl lg:text-3xl">
-								Your discreet voice solution. Say goodbye to unwanted attention.
-							</p>
-							<p class="text-hush-white max-w-screen-sm text-xl md:text-2xl lg:text-3xl mt-4">
-								Get yours now and speak freely without fear.
-							</p>
-							<IconArrowRight class="ml-auto text-hush-white" />
-						</div>
-					</a>
-				</li>
-			</ul>
+		<div class="max-w-screen-xl flex flex-col flex-wrap items-center justify-between mx-auto p-4 mb-8">
+
+			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12">
+						<span class="text-hush-blue-500">
+							TACITUS
+						</span>
+				MASK
+			</h1>
+
+
+			<div
+				class="flex-col hover:scale-110 shadow-xl transform transition block rounded-lg p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-700 mt-12">
+				<p class="text-hush-white max-w-screen-sm text-xl ">
+					Your discreet voice solution. Say goodbye to unwanted attention. Perfect for privacy seekers,
+					professionals and people that looks for Italian style.
+				</p>
+				<p class="text-hush-white max-w-screen-sm text-xl mt-4">
+					Get yours now and speak freely without fear.
+				</p>
+			</div>
+		</div>
+
+		<div class="max-w-screen-xl flex flex-col flex-wrap justify-between mx-auto p-4 mb-4">
+
+			<h1 class="text-white text-4xl md:text-6xl font-bold text-right">
+				Choose
+				<span class="text-hush-blue-500">
+					your design
+				</span>
+			</h1>
+
+		</div>
+
+		<div class="max-w-screen-xl flex flex-col flex-wrap items-center justify-between mx-auto p-4 mb-6">
+			<a href="{base}/pricing/black" class="flex-1 ml-3 mr-3 max-w-lg">
+				<div
+					class="mx-auto flex-1 max-w-lg rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black hover:scale-110 transform transition mb-4">
+					<div class="max-w-lg  bg-black">
+						<img class="w-full   object-contain bg-mask-gray" src="{black_mask}" alt="black_mask">
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-hush-blue-500">NERO</div>
+						<p class="text-hush-white text-base">
+							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+						</p>
+						<IconArrowRight class="ml-auto text-hush-white" />
+					</div>
+					<div class="px-6 pt-4 pb-2">
+					</div>
+				</div>
+			</a>
+
+			<a href="{base}/pricing/white" class="flex-1 ml-3 mr-3 max-w-lg mt-4">
+				<div
+					class="mx-auto flex-1 max-w-lg rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black hover:scale-110 transform transition mb-4">
+					<div class="max-w-lg  bg-black">
+						<img class="w-full   object-contain bg-mask-gray" src="{white_mask}" alt="white_mask">
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-hush-blue-500">BIANCO</div>
+						<p class="text-hush-white text-base">
+							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+						</p>
+						<IconArrowRight class="ml-auto text-hush-white" />
+					</div>
+					<div class="px-6 pt-4 pb-2">
+					</div>
+				</div>
+			</a>
+
+			<a href="{base}/pricing/ombra" class="flex-1 ml-3 mr-3 max-w-lg mt-4">
+				<div
+					class="mx-auto max-w-lg rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black hover:scale-110 transform transition mb-4">
+					<div class="max-w-lg  bg-black">
+						<img class="w-full  object-contain bg-mask-gray" src="{ombra}" alt="ombra">
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-hush-blue-500">OMBRA</div>
+						<p class="text-hush-white text-base">
+							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+						</p>
+						<IconArrowRight class="ml-auto text-hush-white" />
+					</div>
+					<div class="px-6 pt-4 pb-2">
+					</div>
+				</div>
+			</a>
+
 		</div>
 
 		<div class="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12 bg-hush-blue-800 rounded-xl mb-12">
@@ -156,6 +241,7 @@
 					</div>
 				</div>
 			</div>
+			<!--
 			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
 				<a href="{base}/pricing">
 					<button type="button"
@@ -164,6 +250,7 @@
 					</button>
 				</a>
 			</div>
+			-->
 		</div>
 	{/if}
 </MediaQuery>
@@ -171,33 +258,108 @@
 
 <MediaQuery query='(min-width: 769px)' let:matches>
 	{#if matches}
-		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mb-16">
-			<ul class="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
-				<li class="flex flex-col">
-					<a href="{base}/pricing">
-						<div
-							class="flex-col hover:scale-110 shadow-xl transform transition block rounded-lg p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-700 mt-20">
-							<p class="text-hush-white max-w-screen-sm text-xl ">
-								Your discreet voice solution. Say goodbye to unwanted attention. Perfect for privacy seekers,
-								professionals and people that looks for Italian style.
-							</p>
-							<p class="text-hush-white max-w-screen-sm text-xl mt-4">
-								Get yours now and speak freely without fear.
-							</p>
-							<IconArrowRight class="ml-auto text-hush-white" />
-						</div>
-					</a>
-					<h1 class="text-hush-white mr-auto text-7xl font-bold mt-60"><span class="text-hush-blue-500">TACITUS </span>MASK
-					</h1>
-				</li>
-				<li>
-					<img src={ombra} alt="Ombra"
-							 class="ml-16 max-w-lgc  rounded-xl shadow-lg dark:shadow-black/20 bg-hush-grey-500" />
-				</li>
-			</ul>
-		</div>
-		<div class="max-w-screen-xl mx-auto p-4 bg-hush-blue-800  rounded-xl mb-12">
+		<div class="max-w-screen-xl flex flex-col flex-wrap items-center justify-between mx-auto p-4 mb-8">
 
+			<h1 class="text-hush-white mr-auto text-7xl font-bold mt-12">
+						<span class="text-hush-blue-500">
+							TACITUS
+						</span>
+				MASK
+			</h1>
+
+			<div
+				class="flex-col hover:scale-110 shadow-xl transform transition block rounded-lg p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white bg-hush-grey-700 mt-12">
+				<p class="text-hush-white max-w-screen-sm text-xl ">
+					Your discreet voice solution. Say goodbye to unwanted attention. Perfect for privacy seekers,
+					professionals and people that looks for Italian style.
+				</p>
+				<p class="text-hush-white max-w-screen-sm text-xl mt-4">
+					Get yours now and speak freely without fear.
+				</p>
+			</div>
+		</div>
+
+		<div class="max-w-screen-xl flex flex-col flex-wrap justify-between mx-auto p-4 ">
+
+			<h1 class="text-white text-4xl md:text-6xl font-bold mb-5 text-right">
+				Choose
+				<span class="text-hush-blue-500">
+					your design
+				</span>
+			</h1>
+
+		</div>
+
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 mb-6 mt-6">
+
+			<a href="{base}/pricing/black">
+
+				<div
+					class="mx-auto flex-1 max-w-lg rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black hover:scale-110 transform transition mb-4">
+					<div class="max-w-lg  bg-black">
+						<img class="w-full   object-contain bg-mask-gray" src="{black_mask}" alt="black_mask">
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-hush-blue-500">NERO</div>
+						<p class="text-hush-white text-base">
+							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+						</p>
+						<IconArrowRight class="ml-auto text-hush-white" />
+					</div>
+					<div class="px-6 pt-4 pb-2">
+					</div>
+				</div>
+
+			</a>
+
+
+			<a href="{base}/pricing/white">
+
+				<div
+					class="mx-auto flex-1 max-w-lg rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black hover:scale-110 transform transition mb-4">
+					<div class="max-w-lg  bg-black">
+						<img class="w-full   object-contain bg-mask-gray" src="{white_mask}" alt="white_mask">
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-hush-blue-500">BIANCO</div>
+						<p class="text-hush-white text-base">
+							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+						</p>
+						<IconArrowRight class="ml-auto text-hush-white" />
+					</div>
+					<div class="px-6 pt-4 pb-2">
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 mb-6 mt-6">
+			<a href="{base}/pricing/ombra">
+
+				<div
+					class="mx-auto max-w-lg rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black hover:scale-110 transform transition mb-4">
+					<div class="max-w-lg  bg-black">
+						<img class="w-full  object-contain bg-mask-gray" src="{ombra}" alt="ombra">
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-hush-blue-500">OMBRA</div>
+						<p class="text-hush-white text-base">
+							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+						</p>
+						<IconArrowRight class="ml-auto text-hush-white" />
+					</div>
+					<div class="px-6 pt-4 pb-2">
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+
+
+		<div class="max-w-screen-xl mx-auto p-4 bg-hush-blue-800  rounded-xl mb-12">
 			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto">
 
 				<!-- Comfort -->
@@ -303,15 +465,17 @@
 					</div>
 				</div>
 			</div>
+			<!--
+						<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
+							<a href="{base}/pricing">
+								<button type="button"
+												class="text-xl hover:scale-110 transform transition font-redhat text-hush-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-2xl">
+									Learn more
+								</button>
+							</a>
+						</div>
 
-			<div class="max-w-screen-xl flex flex-wrap place-items-start justify-center p-4 mx-auto mb">
-				<a href="{base}/pricing">
-					<button type="button"
-									class="text-xl hover:scale-110 transform transition font-redhat text-hush-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-2xl">
-						Learn more
-					</button>
-				</a>
-			</div>
+						-->
 
 		</div>
 
@@ -343,6 +507,7 @@
 </body>
 <style lang="scss">
   @use '$lib/color';
+
   body {
     margin: 0;
     height: 100%;

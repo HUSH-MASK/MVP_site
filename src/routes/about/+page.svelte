@@ -7,8 +7,9 @@
 	import paolo from '$lib/assets/paolo.jpg';
 	import marco_d_photo from '$lib/assets/marco_d_photo.jpeg';
 	import eddie_photo from '$lib/assets/eddie_photo.jpg';
-	import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import { Dropdown, DropdownItem, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
 	import { page } from '$app/stores';
+	import { ChevronDownOutline } from 'flowbite-svelte-icons';
 	let activeClass = 'text-white bg-hush-blue-800 md:text-white-700 md:dark:text-white dark:bg-hush-blue-800';
 	$: activeUrl = $page.url.pathname;
 </script>
@@ -19,13 +20,23 @@
 		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
 	</NavBrand>
 	<div class="flex md:order-2 bg-hush-grey-600">
-		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600" menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600"/>
+		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
+									menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600" />
 	</div>
-	<NavUl {activeUrl} {activeClass} class="order-1 mr-6 ml-6 bg-hush-grey-600" classUl="bg-hush-grey-600 border-hush-blue-800">
+	<NavUl {activeUrl} {activeClass} class="order-1 mr-6 ml-6 bg-hush-grey-600"
+				 classUl="bg-hush-grey-600 border-hush-blue-800">
 		<NavLi class="text-hush-white" href="{base}/home">Home</NavLi>
 		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
 		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
-		<NavLi class="text-hush-white" href="{base}/pricing">Pricing</NavLi>
+		<NavLi class="cursor-pointer text-hush-white">
+			Pricing<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
+		</NavLi>
+		<Dropdown class="w-44 z-20 bg-hush-grey-600 text-hush-white">
+			<DropdownItem href="{base}/pricing/ombra" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Ombra</DropdownItem>
+			<DropdownItem href="{base}/pricing/bianco" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Bianco</DropdownItem>
+			<DropdownItem href="{base}/pricing/nero" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Nero</DropdownItem>
+		</Dropdown>
+
 	</NavUl>
 </Navbar>
 
@@ -47,7 +58,7 @@
 
 		<!-- ABOUT US-->
 
-		<div id="about" class="max-w-screen-xl flex flex-wrap  justify-between mx-auto p-4 mb-12">
+		<div id="about" class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 mb-12">
 			<h1 class="text-hush-white mr-auto text-4xl font-bold mt-5 text-left mb-5 md:text-6xl md:text-left">
 				About
 				<span class="text-hush-blue-500">
@@ -66,7 +77,7 @@
 			</div>
 		</div>
 
-		<div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
+		<div class="max-w-screen-xl flex flex-wrap  justify-between p-4 mx-auto items-start">
 
 			<!-- LAURA CARD -->
 
@@ -115,7 +126,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						Graduated in economics at Padua, currently engaged in the first-level master's degree in innovation management, he is passionate about science and sport, and together with Paolo, he had the idea of Hush!
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -134,7 +145,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">PAOLO</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						Graduated with a bachelor of economics and management in Luiss G.C. (Rome), he is currently studying Innovation Management at the University of Trento. Highly oriented towards a problem-solving approach, he has immediately believed in the potential of HUSH!
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -153,7 +164,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">RICCARDO</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						As a computer science tutor at NEST Trento, Riccardo supports students in programming and algorithms. He's pursuing a double master's in cybersecurity at the University of Twente and the University of Trento.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -172,7 +183,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">EDDIE</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						Graduated with a three-year degree in computer engineering from the University of Trento, he’s now engaged in a master's degree in cybersecurity. During his experience, he carried out various IoT and web programming projects on his own.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">

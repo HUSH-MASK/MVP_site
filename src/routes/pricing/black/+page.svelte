@@ -1,10 +1,19 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import logo from '$lib/assets/logo.png';
-	import ombra from '$lib/assets/ombra.webp';
-	import { Accordion, AccordionItem, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
+	import black_mask from '$lib/assets/black_mask.jpeg';
+	import {
+		Accordion,
+		AccordionItem, Dropdown,
+		DropdownItem,
+		Navbar,
+		NavBrand,
+		NavHamburger,
+		NavLi,
+		NavUl
+	} from 'flowbite-svelte';
 	import noise_chart from '$lib/assets/noise_chart.png';
-	import { ChevronDoubleDownOutline, ChevronDoubleUpOutline } from 'flowbite-svelte-icons';
+	import { ChevronDoubleDownOutline, ChevronDoubleUpOutline, ChevronDownOutline } from 'flowbite-svelte-icons';
 	import MediaQuery from 'svelte-media-queries';
 	import { page } from '$app/stores';
 
@@ -28,7 +37,15 @@
 		<NavLi class="text-hush-white" href="{base}/home">Home</NavLi>
 		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
 		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
-		<NavLi class="text-hush-white" href="{base}/pricing">Pricing</NavLi>
+		<NavLi class="cursor-pointer text-hush-white">
+			Pricing<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
+		</NavLi>
+		<Dropdown class="w-44 z-20 bg-hush-grey-600 text-hush-white">
+			<DropdownItem href="{base}/pricing/ombra" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Ombra</DropdownItem>
+			<DropdownItem href="{base}/pricing/bianco" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Bianco</DropdownItem>
+			<DropdownItem href="{base}/pricing/nero" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Nero</DropdownItem>
+		</Dropdown>
+
 	</NavUl>
 </Navbar>
 
@@ -36,8 +53,8 @@
 	{#if matches}
 		<div>
 			<div>
-				<img src="{ombra}"
-						 class="translate-y-12 w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+				<img src="{black_mask}"
+						 class="translate-y-12 w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="black_mask" />
 			</div>
 			<div class="-translate-y-36 container my-6 mx-auto md:px-6">
 				<div class="container mx-auto xl:px-32">
@@ -127,8 +144,8 @@
 						<MediaQuery query='(min-width: 769px)' let:matches>
 							{#if matches}
 								<div>
-									<img src="{ombra}"
-											 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+									<img src="{black_mask}"
+											 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="black_mask" />
 								</div>
 							{/if}
 						</MediaQuery>
@@ -230,8 +247,8 @@
 						<MediaQuery query='(min-width: 769px)' let:matches>
 							{#if matches}
 								<div>
-									<img src="{ombra}"
-											 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="ombra" />
+									<img src="{black_mask}"
+											 class="w-full rounded-lg shadow-lg dark:shadow-black/20 bg-hush-grey-500" alt="black_mask" />
 								</div>
 							{/if}
 						</MediaQuery>
