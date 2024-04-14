@@ -7,6 +7,7 @@
 	import paolo from '$lib/assets/paolo.jpg';
 	import marco_d_photo from '$lib/assets/marco_d_photo.jpeg';
 	import eddie_photo from '$lib/assets/eddie_photo.jpg';
+	import peiro from '$lib/assets/peiro.jpeg';
 	import { Dropdown, DropdownItem, Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
 	import { page } from '$app/stores';
 	import { ChevronDownOutline } from 'flowbite-svelte-icons';
@@ -88,7 +89,8 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">LAURA</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+
+						Curious and passionate about problem-solving from a young age, Laura's imagination drives her to innovate and improve ideas, leading her to pursue engineering. She's learned discipline and teamwork through ballet, volleyball, and theater.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -107,7 +109,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
 					<p class="text-hush-white text-base">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+						Graduated with a three-year degree in computer science from the University of Trento. He's now engaged in a master's degree in cyber security. Oriented to mobile programming and problem solving he enjoys sports and technology.
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -190,6 +192,25 @@
 					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#computerscience</span>
 					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#embedded</span>
 					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#researcher</span>
+				</div>
+			</div>
+
+			<!-- RICCARDO P. CARD -->
+
+			<div class="mx-auto max-w-md rounded-xl overflow-hidden shadow-lg bg-hush-grey-500 text-black md:ml-24 hover:scale-110 transform transition mb-10">
+				<div class="max-w-md max-h-56 object-cover">
+					<img class="w-full max-h-56 object-cover" src="{peiro}" alt="Plot">
+				</div>
+				<div class="px-6 py-4">
+					<div class="font-bold text-xl mb-2 text-hush-blue-500">RICCARDO</div>
+					<p class="text-hush-white text-base">
+						Graduating with a bachelor's degree in ICT in Torino, Riccardo is currently pursuing a master's degree in Data Science at Trento. His perspective is characterized by an open mind and a positive approach to challenges.
+					</p>
+				</div>
+				<div class="px-6 pt-4 pb-2">
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#computerscience</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#datascience</span>
+					<span class="text-hush-white inline-block bg-hush-grey-300 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#ICT</span>
 				</div>
 			</div>
 
