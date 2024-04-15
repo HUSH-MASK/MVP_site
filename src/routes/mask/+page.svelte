@@ -15,20 +15,20 @@
 </script>
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 
-<Navbar class="bg-hush-grey-600">
+<Navbar class="bg-hush-grey-600 hover:bg-hush-grey-600">
 	<NavBrand href="{base}/home">
 		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
 	</NavBrand>
 	<div class="flex md:order-2 bg-hush-grey-600">
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
-									menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600" />
+									menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600 hover:bg-hush-grey-600" />
 	</div>
 	<NavUl {activeUrl} {activeClass} class="order-1 mr-6 ml-6 bg-hush-grey-600"
-				 classUl="bg-hush-grey-600 border-hush-blue-800">
+				 classUl="bg-hush-grey-600 border-hush-blue-800 hover:bg-hush-grey-600">
 		<NavLi class="text-hush-white" href="{base}/home">Home</NavLi>
 		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
 		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
-		<NavLi class="cursor-pointer text-hush-white">
+		<NavLi class="cursor-pointer text-hush-white hover:bg-hush-grey-600">
 			Pricing<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
 		</NavLi>
 		<Dropdown class="w-44 z-20 bg-hush-grey-600 text-hush-white">

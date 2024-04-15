@@ -64,7 +64,7 @@
 								class="bg-opacity-5 text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-14 backdrop-blur-[30px]">
 								<h2 class="mb-2 pb-2 text-4xl  font-bold text-hush-blue-500">TACITUS</h2>
 								<p class="mb-6 pb-2  text-xl font-bold text-hush-white dark:text-hush-white">
-									for 199€
+									for 119€
 								</p>
 								<p class="mb-6 pb-2  text-hush-white dark:text-hush-white">
 									Say goodbye to unwanted attention. Perfect for privacy seekers, professionals and people that looks
