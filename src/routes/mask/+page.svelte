@@ -29,19 +29,12 @@
 		<NavLi class="text-hush-white" href="{base}/about">About</NavLi>
 		<NavLi class="text-hush-white" href="{base}/mask">Solution</NavLi>
 		<NavLi class="cursor-pointer text-hush-white">
-			Pricing
-			<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
+			Pricing<ChevronDownOutline class="w-3 h-3 ms-2 text-hush-white dark:text-hush-white inline" />
 		</NavLi>
 		<Dropdown class="w-44 z-20 bg-hush-grey-600 text-hush-white">
-			<DropdownItem href="{base}/pricing/ombra"
-										class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Ombra
-			</DropdownItem>
-			<DropdownItem href="{base}/pricing/bianco"
-										class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Bianco
-			</DropdownItem>
-			<DropdownItem href="{base}/pricing/nero"
-										class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Nero
-			</DropdownItem>
+			<DropdownItem href="{base}/pricing/ombra" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Ombra</DropdownItem>
+			<DropdownItem href="{base}/pricing/white" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Bianco</DropdownItem>
+			<DropdownItem href="{base}/pricing/black" class="focus:bg-hush-grey-600 hover:bg-hush-grey-600 hover:text-hush-blue-800">Tacitus Nero</DropdownItem>
 		</Dropdown>
 
 	</NavUl>
@@ -92,7 +85,7 @@
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-hush-blue-500">NERO</div>
 						<p class="text-hush-white text-base">
-							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+							Light, comfortable, with a clean and elegant design: this is Tacitus Nero.
 						</p>
 						<IconArrowRight class="ml-auto text-hush-white" />
 					</div>
@@ -110,7 +103,7 @@
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-hush-blue-500">BIANCO</div>
 						<p class="text-hush-white text-base">
-							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+							At the forefront of the new frontiers of fashion: this is Tacitus Bianco.
 						</p>
 						<IconArrowRight class="ml-auto text-hush-white" />
 					</div>
@@ -128,7 +121,7 @@
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-hush-blue-500">OMBRA</div>
 						<p class="text-hush-white text-base">
-							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+							Redefine your boundaries with a new enigmatic look: this is Tacitus Ombra.
 						</p>
 						<IconArrowRight class="ml-auto text-hush-white" />
 					</div>
@@ -302,7 +295,7 @@
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-hush-blue-500">NERO</div>
 						<p class="text-hush-white text-base">
-							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+							Light, comfortable, with a clean and elegant design: this is Tacitus Nero.
 						</p>
 						<IconArrowRight class="ml-auto text-hush-white" />
 					</div>
@@ -323,7 +316,7 @@
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-hush-blue-500">BIANCO</div>
 						<p class="text-hush-white text-base">
-							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+							At the forefront of the new frontiers of fashion: this is Tacitus Bianco.
 						</p>
 						<IconArrowRight class="ml-auto text-hush-white" />
 					</div>
@@ -346,7 +339,7 @@
 					<div class="px-6 py-4">
 						<div class="font-bold text-xl mb-2 text-hush-blue-500">OMBRA</div>
 						<p class="text-hush-white text-base">
-							lore ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+							Redefine your boundaries with a new enigmatic look: this is Tacitus Ombra.
 						</p>
 						<IconArrowRight class="ml-auto text-hush-white" />
 					</div>
