@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/off_sound_logo.png';
 	import ombra from '$lib/assets/ombra.webp';
 	import white_mask from '$lib/assets/white_mask-removebg-preview.png';
 	import black_mask from '$lib/assets/black_mask.jpeg';
@@ -17,7 +17,7 @@
 
 <Navbar class="bg-hush-grey-600 hover:bg-hush-grey-600">
 	<NavBrand href="{base}/home">
-		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
+		<img src="{logo} " class="h-12 sm:h-12" alt="HUSH! Logo" />
 	</NavBrand>
 	<div class="flex md:order-2 bg-hush-grey-600">
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
@@ -478,7 +478,7 @@
 <footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
 	<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/"
-																																													class="hover:underline">HUSH!™</a>. All Rights Reserved.
+																																													class="hover:underline">OFF-SOUND!™</a>. All Rights Reserved.
     </span>
 		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
 			<li>

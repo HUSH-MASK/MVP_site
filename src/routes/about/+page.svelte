@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/off_sound_logo.png';
 	import rick_photo from '$lib/assets/rick_photo.png';
 	import laura_photo from '$lib/assets/laura_photo.png';
 	import marco_b_photo from '$lib/assets/marco_b_photo.png';
@@ -18,7 +18,7 @@
 
 <Navbar class="bg-hush-grey-600">
 	<NavBrand href="{base}/home">
-		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
+		<img src="{logo} " class="h-12 sm:h-12" alt="HUSH! Logo" />
 	</NavBrand>
 	<div class="flex md:order-2 bg-hush-grey-600">
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
@@ -53,7 +53,7 @@
 		</h1>
 		<p
 			class="text-hush-white text-xl md:text-2xl text-center md:ml-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
-			HUSH! aims to reinvent the way people communicate on the phone in public places, ensuring maximum privacy via our sound-absorbing mask. The first coming as a complete Bluetooth wearable device.
+			OFF-SOUND! aims to reinvent the way people communicate on the phone in public places, ensuring maximum privacy via our sound-absorbing mask. The first coming as a complete Bluetooth wearable device.
 		</p>
 	</div>
 
@@ -73,7 +73,7 @@
 				</p>
 				<p
 					class="text-hush-white text-xl md:text-2xl text-center mx:auto md:ml-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 mt-5 shadow-xl">
-					Do you have challenging ideas about it and want to collaborate with us? Write to hushinnovation@gmail.com !
+					Do you have challenging ideas about it and want to collaborate with us? Write to offsoundinnovation@gmail.com !
 				</p>
 			</div>
 		</div>
@@ -128,7 +128,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">MARCO</div>
 					<p class="text-hush-white text-base">
-						Graduated in economics at Padua, currently engaged in the first-level master's degree in innovation management, he is passionate about science and sport, and together with Paolo, he had the idea of Hush!
+						Graduated in economics at Padua, currently engaged in the first-level master's degree in innovation management, he is passionate about science and sport, and together with Paolo, he had the idea of OFF-SOUND!
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -147,7 +147,7 @@
 				<div class="px-6 py-4">
 					<div class="font-bold text-xl mb-2 text-hush-blue-500">PAOLO</div>
 					<p class="text-hush-white text-base">
-						Graduated with a bachelor of economics and management in Luiss G.C. (Rome), he is currently studying Innovation Management at the University of Trento. Highly oriented towards a problem-solving approach, he has immediately believed in the potential of HUSH!
+						Graduated with a bachelor of economics and management in Luiss G.C. (Rome), he is currently studying Innovation Management at the University of Trento. Highly oriented towards a problem-solving approach, he has immediately believed in the potential of OFF-SOUND!
 					</p>
 				</div>
 				<div class="px-6 pt-4 pb-2">
@@ -220,7 +220,7 @@
 
 	<footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
 		<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+      <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/" class="hover:underline">OFF-SOUND!™</a>. All Rights Reserved.
     </span>
 			<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
 				<li>

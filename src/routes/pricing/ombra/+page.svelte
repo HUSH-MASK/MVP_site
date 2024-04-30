@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/off_sound_logo.png';
 	import ombra from '$lib/assets/ombra.webp';
 	import {
 		Accordion,
@@ -26,7 +26,7 @@
 
 <Navbar class="bg-hush-grey-600">
 	<NavBrand href="{base}/home">
-		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
+		<img src="{logo} " class="h-12 sm:h-12" alt="HUSH! Logo" />
 	</NavBrand>
 	<div class="flex md:order-2 bg-hush-grey-600">
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
@@ -441,7 +441,7 @@
 <footer class="bg-hush-blue-800 rounded-lg shadow m-4">
 	<div class="max-w-screen-xl mx-auto p-4 flex flex-col md:flex-row md:items-center md:justify-between">
         <span class="text-sm text-white sm:text-center dark:text-hush-white">
-            © 2024 <a href="{base}/home/" class="hover:underline">HUSH!™</a>. All Rights Reserved.
+            © 2024 <a href="{base}/home/" class="hover:underline">OFF-SOUND!™</a>. All Rights Reserved.
         </span>
 		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
 			<li><a href="{base}/home#about" class="hover:underline me-4 md:me-6">About</a></li>

@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import MediaQuery from 'svelte-media-queries';
-	import logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/off_sound_logo.png';
 	import reddit_post from '$lib/assets/reddit_post.png';
 	import plot_blue from '$lib/assets/plot_blue.png';
 	import social_anxiety from '$lib/assets/social_anxiety.jpg';
@@ -11,7 +11,6 @@
 	import {
 		Carousel,
 		Dropdown,
-		DropdownDivider,
 		DropdownItem,
 		Navbar,
 		NavBrand,
@@ -44,7 +43,7 @@
 <body class="min-h-screen bg-hush-grey-600 font-redhat">
 <Navbar class="bg-hush-grey-600">
 	<NavBrand href="{base}/home">
-		<img src="{logo} " class="h-14 sm:h-14" alt="HUSH! Logo" />
+		<img src="{logo} " class="h-12 sm:h-12" alt="HUSH! Logo" />
 	</NavBrand>
 	<div class="flex md:order-2 bg-hush-grey-600">
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600"
@@ -82,8 +81,8 @@
 		{#if matches}
 			<p class="text-hush-white center mt-6 md:mt-10 text-xl md:text-2xl text-center">
 				Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With
-				HUSH!, regain control over your conversation. Our innovative products ensure your voice remains private,
-				empowering you to speak confidently without fear of being heard. With HUSH!, your privacy is assured.
+				OFF-SOUND!, regain control over your conversation. Our innovative products ensure your voice remains private,
+				empowering you to speak confidently without fear of being heard. With OFF-SOUND!, your privacy is assured.
 			</p>
 		{/if}
 	</MediaQuery>
@@ -94,11 +93,11 @@
 				<p
 					class="text-hush-white text-xl md:text-2xl text-center mx-auto max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl mb-6 md:mb-0">
 					Privacy concerns are growing as people feel increasingly exposed to being overheard in public spaces. With
-					HUSH!, regain control over your conversation.</p>
+					OFF-SOUND!, regain control over your conversation.</p>
 				<p
 					class="text-hush-white text-xl md:text-2xl text-center mx-auto  max-w-screen-md bg-hush-blue-800 border-8 rounded-xl border-hush-blue-800 shadow-xl">
 					Our innovative products ensure your voice remains private, empowering you to speak confidently without fear of
-					being heard. With HUSH!, your privacy is assured.</p>
+					being heard. With OFF-SOUND!, your privacy is assured.</p>
 			</div>
 		{/if}
 	</MediaQuery>
@@ -229,7 +228,7 @@
 <footer class="bg-hush-blue-800 rounded-lg shadow m-4 dark:bg-hush-blue-800">
 	<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-hush-white sm:text-center dark:text-hush-white">© 2024 <a href="{base}/home/"
-																																													class="hover:underline">HUSH!™</a>. All Rights Reserved.
+																																													class="hover:underline">OFF-SOUND!™</a>. All Rights Reserved.
     </span>
 		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-hush-white dark:text-hush-white sm:mt-0">
 			<li>
